@@ -18,7 +18,9 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <a href="/">
+          <img src={images.logo} alt="logo" />
+        </a>
       </div>
       {/* <ul className="app__navbar-links">
         {['home', 'COOltology is', 'what we do', 'our projects', 'our team', 'more on COOltology', "let's talk"].map((item) => (
