@@ -6,6 +6,10 @@
 
 .about__title {
   flex-direction: column;
+
+  p {
+    font-size: 20px;
+  }
 }
 
 .app__profiles {

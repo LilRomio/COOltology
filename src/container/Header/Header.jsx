@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import TrackVisibility from 'react-on-screen';
+import { AppWrap } from '../../wrapper';
 import './Header.scss';
 
 const Header = () => {
@@ -77,4 +78,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrap(Header, 'home');
