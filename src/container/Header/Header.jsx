@@ -68,9 +68,7 @@ const Header = () => {
         {({ isVisible }) => (
           <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
             <div className=" tag-cmp app__flex">
-              <h3 className="head-text">
-                A brand <span>{text}</span>
-              </h3>
+              <h3 className="head-text">A brand {text}</h3>
             </div>
           </div>
         )}
