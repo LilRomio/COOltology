@@ -65,6 +65,7 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
+
       <TrackVisibility>
         {({ isVisible }) => (
           <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>

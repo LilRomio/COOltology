@@ -29,31 +29,12 @@ const About = () => {
   return (
     <>
       <div className="about__title app__flex">
-        <h2 className="head-text">Cooltology is.. </h2>
+        <h1 className="head-text">Cooltology is.. </h1>
+        <br />
         <p className="p-text">
           The blend between culture, stories, tactics, and the coolness of them all. Their ever changing dynamics. Superfluous, apparently chaotic but
           with fascinating coherence
         </p>
-      </div>
-
-      <div className="app__profiles">
-        {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
-          </motion.div>
-        ))}
       </div>
     </>
   );
