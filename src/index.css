@@ -20,8 +20,9 @@
 }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-padding-top: 40px;
 }
 
 body {

@@ -8,20 +8,18 @@ import './Navbar.scss';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '-100%' },
-  };
-
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
+      <motion.div
+        intial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="app__navbar-logo"
+      >
         <a href="/">
           <img src={images.logo} alt="logo" />
         </a>
-      </div>
+      </motion.div>
       {/* <ul className="app__navbar-links">
         {['home', 'COOltology is', 'what we do', 'our projects', 'our team', 'more on COOltology', "let's talk"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -36,7 +34,15 @@ const Navbar = () => {
           <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85, ease: 'easeOut' }}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['home', 'COOltology is', 'what we do', 'our projects', 'our team', 'more on COOltology', "let's talk"].map((item) => (
+              {[
+                'home',
+                'COOltology is',
+                'what we do',
+                'our projects',
+                'our team',
+                'more on COOltology',
+                "let's talk",
+              ].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}

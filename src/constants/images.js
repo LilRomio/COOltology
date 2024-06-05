@@ -4,6 +4,7 @@ import headerImg from '../assets/beautiful-rendering-colorful-circles.jpg';
 import profileImg1 from '../assets/close-up-beautiful-optical-fiber-details.jpg';
 import profileImg2 from '../assets/close-up-light-trails.jpg';
 import profileImg3 from '../assets/top-view-colorful-translucent-geometric-shapes.jpg';
+import founder from '../assets/Sandra.jpg';
 
 export default {
   logo,
@@ -12,4 +13,5 @@ export default {
   profileImg1,
   profileImg2,
   profileImg3,
+  founder,
 };
