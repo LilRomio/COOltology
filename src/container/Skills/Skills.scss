@@ -15,11 +15,11 @@
     padding-top: 50px;
     text-align: center;
     color: orange;
-    font-size: 36px;
+    font-size: 32px;
 
     .progressBar {
       height: 10px;
-      background-color: white;
+      background-color: var(--white-color);
     }
   }
 
@@ -58,11 +58,11 @@
         gap: 30px;
 
         h2 {
-          font-size: 72px;
+          font-size: 56px;
         }
 
         p {
-          color: gray;
+          color: var(--gray-color);
           font-size: 20px;
         }
 

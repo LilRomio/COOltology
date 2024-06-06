@@ -1,12 +1,13 @@
 import React from 'react';
 import { About, Footer, Header, Skills, Team, Values, Work } from './container';
-import { Navbar } from './components';
+import { Navbar, Cursor } from './components';
 import './App.scss';
 import Parallax from './container/Parallax/Parallax';
 
 const App = () => {
   return (
     <div className="app">
+      <Cursor />
       <Navbar />
       <Header />
       <About />

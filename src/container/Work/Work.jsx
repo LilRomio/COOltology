@@ -81,7 +81,7 @@ const Work = () => {
             For Your <motion.b whileHover={{ color: 'var(--white-color)' }}>Business.</motion.b>
           </h2>
           <motion.div className="subtitle" variants={variants} initial="initial" whileInView="animate">
-            <h3 className="head-text">What We Did?</h3>
+            <h3 className="head-text">What We Did</h3>
           </motion.div>
         </div>
       </motion.div>
@@ -109,4 +109,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, 'what we do');
+export default AppWrap(Work, 'our projects');

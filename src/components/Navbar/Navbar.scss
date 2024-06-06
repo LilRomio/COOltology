@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background: transparent;
   box-shadow: 0 8px 32px 0 var(--secondary-color);
   backdrop-filter: blur(4px);
@@ -23,7 +23,7 @@
 
   img {
     width: 140px;
-    height: 35px;
+    height: 40px;
 
     @media screen and (min-width: 2000px) {
       width: 220px;
