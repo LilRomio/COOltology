@@ -22,7 +22,6 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-top: 40px;
 }
 
 body {
@@ -31,4 +30,11 @@ body {
   position: relative;
   background-color: var(--black-color) !important;
   color: var(--white-color) !important;
+}
+
+section {
+  height: 100vh !important;
+  width: 100vw;
+  scroll-snap-align: center;
+  overflow: hidden;
 }

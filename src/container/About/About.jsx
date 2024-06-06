@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
@@ -32,8 +32,8 @@ const About = () => {
         <h1 className="head-text">Cooltology is.. </h1>
         <br />
         <p className="p-text">
-          The blend between culture, stories, tactics, and the coolness of them all. Their ever changing dynamics. Superfluous, apparently chaotic but
-          with fascinating coherence
+          The blend between culture, stories, tactics, and the coolness of them all. Their ever changing dynamics.
+          Superfluous, apparently chaotic but with fascinating coherence
         </p>
       </div>
 

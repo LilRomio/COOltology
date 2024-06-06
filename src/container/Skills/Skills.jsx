@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
-import { images } from '../../constants';
 
 import { AppWrap } from '../../wrapper';
 import './Skills.scss';
-
 const items = [
   {
     id: 1,
@@ -39,7 +37,7 @@ const Single = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
     <section>
