@@ -6,6 +6,24 @@
 
   padding: 1rem 2rem 0rem;
 
+  .header-text {
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    gap: 50px;
+
+    h2 {
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--white-color);
+      font-size: 3rem;
+    }
+
+    .bold-text {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+  }
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }
@@ -48,15 +66,6 @@
     max-width: 800px;
     height: 500px;
     border-radius: 1%;
-  }
-
-  .header-text {
-    flex-direction: column;
-    position: absolute;
-
-    h2 {
-      color: var(--white-color);
-    }
   }
 }
 .slidingTextContainer {

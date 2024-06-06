@@ -27,23 +27,34 @@ const textVariants = {
     },
   },
 };
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: '-220%',
-    transition: {
-      repeat: Infinity,
-      repeatType: 'mirror',
-      duration: 30,
-    },
-  },
-};
+// const sliderVariants = {
+//   initial: {
+//     x: 0,
+//   },
+//   animate: {
+//     x: '-220%',
+//     transition: {
+//       repeat: Infinity,
+//       repeatType: 'mirror',
+//       duration: 30,
+//     },
+//   },
+// };
 
 const Header = () => {
   return (
     <div className="app__header app__flex">
+      <motion.div className="header-text app__flex" variants={textVariants} initial="initial" animate="animate">
+        <motion.h2 variants={textVariants} className="head-text">
+          <span className="transparent-title">Brand Delivery /</span> Strategic Planning /
+        </motion.h2>
+        <motion.h2 variants={textVariants} className="head-text">
+          Brand Review Workshops /<span className="transparent-title"> Culture Analysis /</span>
+        </motion.h2>
+        <motion.h2 className="head-text">
+          A brand is <span>a brand is</span> <span className="bold-text">a brand is.</span>
+        </motion.h2>
+      </motion.div>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -53,27 +64,8 @@ const Header = () => {
           <div className="header-img app__flex">
             <img src={images.headerImg} alt="headerImg" />
           </div>
-
-          <motion.div className="header-text app__flex" variants={textVariants} initial="initial" animate="animate">
-            <motion.h2 variants={textVariants} className="head-text">
-              Brand Delivery / Strategic Planning
-            </motion.h2>
-            <motion.h2 variants={textVariants} className="head-text">
-              Strategic Planning
-            </motion.h2>
-            <motion.h2 variants={textVariants} className="head-text">
-              Culture Analysis
-            </motion.h2>
-            <motion.h2 variants={textVariants} className="head-text">
-              Brand Review Workshops
-            </motion.h2>
-          </motion.div>
         </div>
       </motion.div>
-
-      <div className=" tag-cmp app__flex">
-        <h3 className="head-text">A brand is a brand is a brand</h3>
-      </div>
     </div>
   );
 };
