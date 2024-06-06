@@ -56,7 +56,7 @@ const Header = () => {
 
           <motion.div className="header-text app__flex" variants={textVariants} initial="initial" animate="animate">
             <motion.h2 variants={textVariants} className="head-text">
-              Brand Delivery
+              Brand Delivery / Strategic Planning
             </motion.h2>
             <motion.h2 variants={textVariants} className="head-text">
               Strategic Planning
@@ -67,9 +67,6 @@ const Header = () => {
             <motion.h2 variants={textVariants} className="head-text">
               Brand Review Workshops
             </motion.h2>
-          </motion.div>
-          <motion.div variants={sliderVariants} initial="initial" animate="animate" className="slidingTextContainer">
-            Brand Delivery Strategic Planning Culture Analysis Brand Review Workshops
           </motion.div>
         </div>
       </motion.div>

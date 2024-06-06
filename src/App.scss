@@ -37,7 +37,7 @@
 
 .head-text {
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   color: var(--white-color);
 
@@ -67,7 +67,7 @@
 
 .bold-text {
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--white-color);
   text-align: left;
 
@@ -143,13 +143,13 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #cbcbcb;
+    background-color: var(--white-color);
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--primary-color);
     }
 
     @media screen and (min-width: 2000px) {
