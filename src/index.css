@@ -21,7 +21,6 @@
 
 html {
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +34,7 @@ body {
 section {
   height: 100vh !important;
   width: 100vw;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   overflow: hidden;
+  scroll-margin-top: 60px;
 }
