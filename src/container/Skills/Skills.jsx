@@ -37,7 +37,7 @@ const Single = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-1000, 300]);
 
   return (
     <section>
@@ -47,8 +47,8 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" />
           </div>
           <motion.div className="textContainer" style={{ y }}>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
+            <h2 className="head-text">{item.title}</h2>
+            <p className="p-text">{item.desc}</p>
           </motion.div>
         </div>
       </div>
@@ -71,7 +71,7 @@ const Skills = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>What we do</h1>
+        <h1 className="head-text">What we do</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

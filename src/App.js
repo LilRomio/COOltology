@@ -7,16 +7,14 @@ const App = () => {
   return (
     <div className="app">
       <Cursor />
+      <Navbar />
       <section>
-        <Navbar />
         <Header />
       </section>
       <section>
         <About />
       </section>
-      <section>
-        <Skills />
-      </section>
+      <Skills />
       <section>
         <Team />
       </section>
