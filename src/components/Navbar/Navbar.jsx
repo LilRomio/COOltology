@@ -34,15 +34,7 @@ const Navbar = () => {
           <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 1, ease: 'easeOut' }}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {[
-                'home',
-                'COOltology is',
-                'what we do',
-                'our projects',
-                'our team',
-                'more on COOltology',
-                "let's talk",
-              ].map((item) => (
+              {['home', 'COOltology is', 'what we do', 'our team', 'more on COOltology', "let's talk"].map((item) => (
                 <li key={item}>
                   <motion.a
                     whileHover={{ scale: 1.1 }}

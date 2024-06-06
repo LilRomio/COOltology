@@ -1,7 +1,7 @@
 .app {
   scroll-snap-align: center;
-  // background-color: var(--black-color);
-  background: linear-gradient(180deg, #05050c, #111132);
+  background-color: var(--black-color);
+
   font-family: var(--font-base);
 }
 
@@ -47,7 +47,7 @@
   align-items: flex-end;
 
   p {
-    color: var(--primary-color);
+    color: var(--white-color);
   }
 }
 
@@ -55,10 +55,10 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--white-color);
 
   span {
-    color: var(--secondary-color);
+    color: var(--white-color);
   }
 
   @media screen and (min-width: 2000px) {
@@ -73,7 +73,7 @@
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: var(--gray-color);
+  color: var(--white-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -84,7 +84,7 @@
 .bold-text {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--primary-color);
+  color: var(--white-color);
   text-align: left;
 
   @media screen and (min-width: 2000px) {

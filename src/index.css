@@ -30,5 +30,5 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--black-color) !important;
-  color: var(--primary-color) !important;
+  color: var(--white-color) !important;
 }

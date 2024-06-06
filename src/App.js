@@ -14,7 +14,7 @@ const App = () => {
       {/* <Parallax id="Services" type="services" /> */}
       <Skills />
       {/* <Parallax id="Portfolio" type="portfolio" /> */}
-      <Work></Work>
+      {/* <Work/> */}
       <Team />
       <Values />
       <Footer />
