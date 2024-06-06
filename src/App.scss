@@ -1,6 +1,7 @@
 .app {
   scroll-snap-align: center;
-  background-color: var(--black-color);
+  // background-color: var(--black-color);
+  background: linear-gradient(180deg, #05050c, #111132);
   font-family: var(--font-base);
 }
 
@@ -30,7 +31,6 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 2rem 2rem;
 
   @media screen and (max-width: 450px) {
     padding: 5rem 1rem 2rem;

@@ -1,9 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
-import TrackVisibility from 'react-on-screen';
+
 import { AppWrap } from '../../wrapper';
 import './Skills.scss';
+
+const variants = {
+  initial: {
+    x: -500,
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const abouts = [
   {
@@ -31,11 +48,30 @@ const abouts = [
 const Skills = () => {
   return (
     <>
-      <div className="skills__title app__flex">
-        <h2 className="head-text">What we do </h2>
-      </div>
+      <motion.div className="textContainer" variants={variants} initial="initial" whileInView="animate">
+        <p>
+          I focus on helping your brand grow <br /> and move forward
+        </p>
+        <hr />
+      </motion.div>
+      <motion.div className="skills__title app__flex" variants={variants}>
+        <div className="title">
+          <img src={images.people} alt="peopleImg" />
+          <h2 className="head-text">
+            <b>Unique</b> Ideas
+          </h2>
+        </div>
+        <div className="title">
+          <h2 className="head-text">
+            <b>For Your</b> Business.
+          </h2>
+          <motion.div className="subtitle" variants={variants} initial="initial" whileInView="animate">
+            <h3 className="head-text">What We Do?</h3>
+          </motion.div>
+        </div>
+      </motion.div>
 
-      <div className="app__profiles">
+      <motion.div className="app__profiles" variants={variants}>
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
@@ -53,7 +89,7 @@ const Skills = () => {
             </p>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

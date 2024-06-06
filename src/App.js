@@ -2,6 +2,7 @@ import React from 'react';
 import { About, Footer, Header, Skills, Team, Values, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
+import Parallax from './container/Parallax/Parallax';
 
 const App = () => {
   return (
@@ -9,8 +10,10 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
+      {/* <Parallax id="Services" type="services" /> */}
       <Skills />
-      <Work />
+      {/* <Parallax id="Portfolio" type="portfolio" /> */}
+      <Work></Work>
       <Team />
       <Values />
       <Footer />
