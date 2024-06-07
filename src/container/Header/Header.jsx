@@ -51,9 +51,6 @@ const Header = () => {
         <motion.h2 variants={textVariants} className="head-text">
           Brand Review Workshops /<span className="transparent-title"> Culture Analysis /</span>
         </motion.h2>
-        <motion.h2 className="head-text">
-          A brand is <span>a brand is</span> <span className="bold-text">a brand is.</span>
-        </motion.h2>
       </motion.div>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -66,8 +63,13 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
+      <br />
+      <br />
+      <motion.h2 className="head-text">
+        A brand is <span>a brand is</span> <span className="bold-text">a brand is.</span>
+      </motion.h2>
     </div>
   );
 };
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, 'Hello!');

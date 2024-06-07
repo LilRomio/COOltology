@@ -11,17 +11,17 @@ const App = () => {
       <section>
         <Header />
       </section>
-      <section>
+      <section id="about-section">
         <About />
+      </section>
+      <section id="whatWeDo-section">
+        <Values />
       </section>
       <Skills />
       <section>
         <Team />
       </section>
       {/* <Work/> */}
-      <section>
-        <Values />
-      </section>
       <section>
         <Footer />
       </section>

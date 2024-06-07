@@ -6,4 +6,4 @@ const Footer = () => {
   return <div>Footer</div>;
 };
 
-export default AppWrap(Footer, "let's talk");
+export default AppWrap(Footer, "Let's talk");

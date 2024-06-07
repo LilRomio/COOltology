@@ -86,4 +86,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, 'what we do');
+export default AppWrap(Skills, 'We Do');

@@ -33,4 +33,4 @@ const Team = () => {
   );
 };
 
-export default AppWrap(Team, 'our team');
+export default AppWrap(Team, 'We Are');
