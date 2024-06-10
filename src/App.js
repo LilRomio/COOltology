@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Footer, Header, Skills, Team, Values } from './container';
+import { About, Footer, Header, WhatWeDo, Skills, Team, Values } from './container';
 import { Navbar, Cursor } from './components';
 import './App.scss';
 
@@ -14,10 +14,12 @@ const App = () => {
       <section id="about-section">
         <About />
       </section>
-      <section id="whatWeDo-section">
+      <section>
         <Values />
       </section>
-      <Skills />
+      <section id="weDo-section">
+        <WhatWeDo />
+      </section>
       <section>
         <Team />
       </section>

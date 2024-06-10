@@ -1,34 +1,49 @@
-.app__about {
+.app__weDo {
   flex: 1;
   width: 100%;
-  flex-direction: column;
 }
 
-.about__title {
+.weDo__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .weDo-title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.weDo__title {
   flex-direction: column;
+  flex-grow: 2;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: var(--black-color);
+  padding-right: 50px;
 
   p {
     font-size: 20px;
   }
 }
 
-.app__profiles {
+.app__cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-top: 2rem;
 
   .decoration__about {
     color: var(--primary-color);
-    font-weight: 800;
+    font-weight: 400;
   }
 }
 
-.app__profile-item {
-  width: 340px;
-
+.app__cards-item {
+  width: 300px;
+  height: 250px;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +73,4 @@ hr {
   width: 320px;
   border: none;
   border-top: 1px solid var(--primary-color);
-}
-
-button {
-  border: none;
-  background: none;
 }

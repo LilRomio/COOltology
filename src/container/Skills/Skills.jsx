@@ -9,7 +9,7 @@ const items = [
     title: 'Brand Strategic Planning',
     subtitle: 'Vision-driven Roadmap',
     img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa augue, feugiat id tempor ac, tristique et nisi. Donec nec laoreet odio. Aliquam bibendum erat et nisi congue, a malesuada nunc tristique. Vestibulum ut nunc eu tortor convallis dictum quis malesuada lectus. Donec pulvinar ante a justo laoreet, a faucibus leo ullamcorper. Sed sagittis commodo euismod.',
+    desc: 'Brand Audit Brand Insights Actionable Roadmap to prioritize initiatives and optimize return ',
   },
   {
     id: 2,
@@ -86,4 +86,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, 'We Do');
+export default Skills;

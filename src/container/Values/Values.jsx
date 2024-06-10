@@ -13,6 +13,7 @@ const Values = () => {
         <div>
           <div className="values__description">
             The blend between culture, stories, tactics, and the coolness of them all. Their ever changing dynamics.
+            <br />
             Superfluous, apparently chaotic but with fascinating coherence.
           </div>
         </div>

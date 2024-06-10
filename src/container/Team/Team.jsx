@@ -18,13 +18,15 @@ const Team = () => {
           </div>
 
           <div className="team-text app__flex">
-            <h2 className="head-text">Founder</h2>
+            <h2 className="head-text">Hi, I’m Sandra!</h2>
             <br />
-            <p className="p-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa augue, feugiat id tempor ac, tristique
-              et nisi. Donec nec laoreet odio. Aliquam bibendum erat et nisi congue, a malesuada nunc tristique.
-              Vestibulum ut nunc eu tortor convallis dictum quis malesuada lectus. Donec pulvinar ante a justo laoreet,
-              a faucibus leo ullamcorper. Sed sagittis commodo euismod.
+            <h2 className="bolt-text">Main Cooltogist & Founder </h2>
+            <hr />
+            <br />
+            <p className="p-text team__description">
+              Political Science breeding Experienced in the triad of agency, corporate and business worlds. Perfect
+              blend of Creativity & Action Insatiable appetite for culture and its intricate dance with people and
+              societies. Strong believer in a brand’s alignment with cultural context & market dynamics.
             </p>
           </div>
         </div>

@@ -45,7 +45,6 @@ section {
   background-color: var(--white-color);
 }
 
-#whatWeDo-section {
+#weDo-section {
   padding: 70px 0;
-  background-color: var(--tertiary-color);
 }

@@ -5,3 +5,4 @@ export { default as Skills } from './Skills/Skills';
 export { default as Team } from './Team/Team';
 export { default as Values } from './Values/Values';
 export { default as Work } from './Work/Work';
+export { default as WhatWeDo } from './WhatWeDo/WhatWeDo';
