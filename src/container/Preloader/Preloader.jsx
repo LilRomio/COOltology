@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 
-const words = ['Hello', 'Bonjour', 'Ciao', 'Olà', 'やあ', 'Hallå', 'Guten tag', 'Hallo'];
+const words = [' A brand is...', ' A brand is a brand is...', 'A brand is a brand is a brand is.'];
 
 const Preloader = () => {
   const [index, setIndex] = useState(0);
@@ -14,12 +14,12 @@ const Preloader = () => {
   }, []);
 
   useEffect(() => {
-    if (index == words.length - 1) return;
+    if (index === words.length - 1) return;
     setTimeout(
       () => {
         setIndex(index + 1);
       },
-      index == 0 ? 1000 : 150
+      index === 0 ? 1000 : 150
     );
   }, [index]);
 
@@ -33,11 +33,11 @@ const Preloader = () => {
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.7, ease: [0.76, 0.24, 0.24, 1] },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
+      transition: { duration: 0.7, ease: [0.76, 0.24, 0.24, 1], delay: 0.3 },
     },
   };
 
@@ -46,7 +46,6 @@ const Preloader = () => {
       {dimension.width > 0 && (
         <>
           <motion.p variants={opacity} initial="initial" animate="enter">
-            <span></span>
             {words[index]}
           </motion.p>
           <svg>

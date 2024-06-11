@@ -9,19 +9,20 @@ const Footer = () => {
     target: container,
     offset: ['start end', 'end end'],
   });
-  const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
+
   const y = useTransform(scrollYProgress, [0, 1], [-500, 0]);
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
   return (
     <motion.div style={{ y }} ref={container}>
-      <div>
-        <div>
-          <span>
-            <div></div>
-            <h2>Let's talk</h2>
-          </span>
-
-          <motion.div style={{ x }}></motion.div>
+      <div className="contact">
+        <div className="body">
+          <div className="title">
+            <span>
+              <h2 className="header-text">Let's talk</h2>
+            </span>
+          </div>
+        </div>
+        <div className="nav">
           <motion.svg
             style={{ rotate, scale: 2 }}
             width="9"
@@ -35,11 +36,9 @@ const Footer = () => {
               fill="white"
             />
           </motion.svg>
-        </div>
-        <div>
-          <p> sandra@cooltology.com </p>
+          <p className="p-text"> sandra@cooltology.com </p>
 
-          <p> +40720880348 </p>
+          <p className="p-text"> +40720880348 </p>
         </div>
       </div>
     </motion.div>

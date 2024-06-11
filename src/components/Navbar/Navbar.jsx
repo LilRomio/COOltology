@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { menuSlide } from './animation';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
@@ -28,10 +28,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul> */}
-      <div className="app__navbar-menu">
+      <motion.div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
-          <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 1, ease: 'easeOut' }}>
+          <motion.div whileInView={{ x: [300, 0] }} variants={menuSlide}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
               {['Hello!', 'Cooltology is', 'We Do', 'We Are', "Let's talk"].map((item) => (
@@ -49,7 +49,7 @@ const Navbar = () => {
             </ul>
           </motion.div>
         )}
-      </div>
+      </motion.div>
     </nav>
   );
 };
