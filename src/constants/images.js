@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png';
-import logo2 from '../assets/logo2.svg';
+import logoWhite from '../assets/logo-white.png';
 import headerImg from '../assets/beautiful-rendering-colorful-circles.jpg';
 import profileImg1 from '../assets/close-up-beautiful-optical-fiber-details.jpg';
 import profileImg2 from '../assets/close-up-light-trails.jpg';
@@ -13,7 +13,7 @@ import people from '../assets/people.webp';
 
 export default {
   logo,
-  logo2,
+  logoWhite,
   headerImg,
   profileImg1,
   profileImg2,

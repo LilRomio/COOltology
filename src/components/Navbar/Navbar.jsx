@@ -17,7 +17,7 @@ const Navbar = () => {
         className="app__navbar-logo"
       >
         <a href="/">
-          <img src={images.logo} alt="logo" />
+          <img src={images.logoWhite} alt="logo" />
         </a>
       </motion.div>
       {/* <ul className="app__navbar-links">

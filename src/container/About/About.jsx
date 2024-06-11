@@ -29,7 +29,7 @@ const AboutCard = ({ about, isOpen, toggleCard }) => {
   return (
     <motion.div
       whileInView={{ opacity: 1 }}
-      whileHover={{ scale: 1.3 }}
+      whileHover={{ scale: 1.1 }}
       transition={{ duration: 0.5, type: 'tween' }}
       className="app__profile-item"
     >
@@ -37,7 +37,9 @@ const AboutCard = ({ about, isOpen, toggleCard }) => {
         <span className="decoration__about"> // </span> {about.title}
       </h2>
       <hr />
-      <button onClick={toggleCard}>{isOpen ? <FaGenderless /> : <CgMoreO />}</button>
+      <button style={{ cursor: 'pointer' }} onClick={toggleCard}>
+        {isOpen ? <FaGenderless /> : <CgMoreO />}
+      </button>
       {isOpen && (
         <motion.div
           className="card__description"
@@ -63,7 +65,9 @@ const About = () => {
   return (
     <>
       <div className="about__title app__flex">
-        <h1 className="b-head-text about-head">Your Brand Needs:</h1>
+        <h1 className="b-head-text about-head" style={{ fontSize: '3rem' }}>
+          Your Brand Needs:
+        </h1>
         <hr />
         <br />
       </div>
