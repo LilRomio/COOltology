@@ -31,6 +31,7 @@ const textVariants = {
 
 const Header = () => {
   const firstText = useRef(null);
+  const secondText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
@@ -57,6 +58,7 @@ const Header = () => {
       xPercent = -100;
     }
     gsap.set(firstText.current, { xPercent: xPercent });
+    gsap.set(secondText.current, { xPercent: xPercent });
 
     requestAnimationFrame(animate);
     xPercent += 0.1 * direction;
@@ -82,11 +84,17 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
-
+      <br />
       <div ref={slider} className="head-text slider">
         <p ref={firstText} className="slider__text">
-          A brand is <span>a brand is</span>{' '}
-          <span className="bold-text" style={{ fontSize: '8rem' }}>
+          A brand is <span>a brand is</span> {''}
+          <span className="bold-text" style={{ fontSize: '6rem' }}>
+            a brand is.
+          </span>
+        </p>
+        <p ref={secondText} className="slider__text">
+          A brand is <span> a brand is</span> {''}
+          <span className="bold-text" style={{ fontSize: '6rem' }}>
             a brand is.
           </span>
         </p>
