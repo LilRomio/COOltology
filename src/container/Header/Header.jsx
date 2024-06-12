@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
-import { AppWrap } from '../../wrapper';
 import './Header.scss';
 
 const textVariants = {
@@ -27,21 +28,39 @@ const textVariants = {
     },
   },
 };
-// const sliderVariants = {
-//   initial: {
-//     x: 0,
-//   },
-//   animate: {
-//     x: '-220%',
-//     transition: {
-//       repeat: Infinity,
-//       repeatType: 'mirror',
-//       duration: 30,
-//     },
-//   },
-// };
 
 const Header = () => {
+  const firstText = useRef(null);
+  const slider = useRef(null);
+  let xPercent = 0;
+  let direction = -1;
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(slider.current, {
+      scrollTrigger: {
+        trigger: document.documentElement,
+        scrub: 0.25,
+        start: 0,
+        end: window.innerHeight,
+        onUpdate: (e) => (direction = e.direction * -1),
+      },
+      x: '-500px',
+    });
+    requestAnimationFrame(animate);
+  }, []);
+
+  const animate = () => {
+    if (xPercent < -100) {
+      xPercent = 0;
+    } else if (xPercent > 0) {
+      xPercent = -100;
+    }
+    gsap.set(firstText.current, { xPercent: xPercent });
+
+    requestAnimationFrame(animate);
+    xPercent += 0.1 * direction;
+  };
   return (
     <div className="app__header app__flex">
       <motion.div className="header-text app__flex" variants={textVariants} initial="initial" animate="animate">
@@ -59,15 +78,19 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="header-img app__flex">
-            <img src={images.headerImg} alt="headerImg" />
+            <img src={images.headerImg2} alt="headerImg" />
           </div>
         </div>
       </motion.div>
-      <br />
-      <br />
-      <motion.h2 className="head-text">
-        A brand is <span>a brand is</span> <span className="bold-text">a brand is.</span>
-      </motion.h2>
+
+      <div ref={slider} className="head-text slider">
+        <p ref={firstText} className="slider__text">
+          A brand is <span>a brand is</span>{' '}
+          <span className="bold-text" style={{ fontSize: '8rem' }}>
+            a brand is.
+          </span>
+        </p>
+      </div>
     </div>
   );
 };

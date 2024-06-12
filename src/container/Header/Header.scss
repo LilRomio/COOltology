@@ -79,13 +79,6 @@
     border-radius: 1%;
   }
 }
-.slidingTextContainer {
-  position: absolute;
-  font-size: 16vh;
-  bottom: 0;
-
-  color: #ffffff09;
-}
 
 .tag-cmp {
   flex-direction: column;
@@ -95,4 +88,26 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+}
+
+.slider__text {
+  position: relative;
+  margin: 0px;
+  color: transparent;
+  font-size: 8rem;
+  font-weight: 500;
+  padding-right: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white-color);
+}
+
+.slider__text:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
 }
