@@ -34,4 +34,4 @@ const Values = () => {
   );
 };
 
-export default AppWrap(Values, 'Cooltology is');
+export default Values;

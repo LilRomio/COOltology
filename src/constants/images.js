@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logoBlack from '../assets/logo.png';
 import logoWhite from '../assets/logo-white.png';
 import headerImg from '../assets/beautiful-rendering-colorful-circles.jpg';
 import profileImg1 from '../assets/close-up-beautiful-optical-fiber-details.jpg';
@@ -12,7 +12,7 @@ import planets from '../assets/planets.png';
 import people from '../assets/people.webp';
 
 export default {
-  logo,
+  logoBlack,
   logoWhite,
   headerImg,
   profileImg1,

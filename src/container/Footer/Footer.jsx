@@ -45,4 +45,4 @@ const Footer = () => {
   );
 };
 
-export default AppWrap(Footer, "Let's talk");
+export default Footer;

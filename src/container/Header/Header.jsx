@@ -72,4 +72,4 @@ const Header = () => {
   );
 };
 
-export default AppWrap(Header, 'Hello!');
+export default Header;

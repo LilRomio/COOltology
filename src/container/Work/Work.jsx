@@ -109,4 +109,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, 'our projects');
+export default Work;

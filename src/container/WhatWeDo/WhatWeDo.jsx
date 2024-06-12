@@ -64,4 +64,4 @@ const WhatWeDo = () => {
   );
 };
 
-export default AppWrap(WhatWeDo, 'We Do');
+export default WhatWeDo;
