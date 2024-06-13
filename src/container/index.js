@@ -7,3 +7,4 @@ export { default as Values } from './Values/Values';
 export { default as Work } from './Work/Work';
 export { default as WhatWeDo } from './WhatWeDo/WhatWeDo';
 export { default as Preloader } from './Preloader/Preloader';
+export { default as WhyCooltology } from './WhyCooltology/WhyCooltology';

@@ -19,7 +19,7 @@ const Team = () => {
           </div>
 
           <div className="team-text app__flex">
-            <h2 className="head-text">Hi, I’m Sandra!</h2>
+            <h2 className="head-text team-title">Hi, I’m Sandra!</h2>
             <br />
             <h2 className="bolt-text">Main Cooltogist & Founder </h2>
             <hr />

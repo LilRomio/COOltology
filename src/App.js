@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Preloader, About, Footer, Header, WhatWeDo, Skills, Team, Values } from './container';
+import { Preloader, About, Footer, Header, WhatWeDo, Skills, WhyCooltology, Team, Values } from './container';
 import { Navbar, Cursor } from './components';
 import './App.scss';
 
@@ -36,7 +36,9 @@ const App = () => {
       <section>
         <Team />
       </section>
-      {/* <Work/> */}
+      <section>
+        <WhyCooltology />
+      </section>
       <section>
         <Footer />
       </section>

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
-import { useRef } from 'react';
+
 import { slideUp, opacity } from './animation';
 import { AppWrap } from '../../wrapper';
 import './Values.scss';

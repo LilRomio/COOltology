@@ -54,6 +54,20 @@
     margin-left: 30px;
     text-align: center;
 
+    .team-title {
+      font-family: 'sans-serif';
+      font-variation-settings: 'wght' 1, 'MIDL' 0, 'CONT' 0;
+      font-size: 3rem;
+      line-height: 1.1;
+      font-weight: 1;
+      transition: font-variation-settings 500ms;
+
+      &:hover {
+        font-weight: 1000;
+        font-variation-settings: 'wght' 1000, 'MIDL' -1000, 'CONT' 250;
+      }
+    }
+
     p {
       font-size: 20px;
     }
