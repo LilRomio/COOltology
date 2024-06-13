@@ -16,9 +16,12 @@
     }
     a {
       text-decoration: none;
-      color: black;
+      color: var(--black-color);
       font-size: 46px;
       cursor: pointer;
+      &:hover {
+        color: var(--primary-color);
+      }
     }
   }
   .footer {
@@ -28,6 +31,9 @@
       width: 50%;
       margin-top: 5px;
       cursor: pointer;
+      &:hover {
+        color: var(--primary-color);
+      }
     }
   }
 }

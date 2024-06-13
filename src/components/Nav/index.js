@@ -18,6 +18,7 @@ export default function index() {
           );
         })}
       </div>
+      <div />
       <motion.div className={styles.footer} style={{ color: 'var(--black-color)' }}>
         {footerLinks.map((link, i) => {
           const { title, href } = link;
