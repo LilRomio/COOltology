@@ -1,4 +1,4 @@
-export const links = [
+export const item = [
   {
     title: 'Hello!',
     href: '/',

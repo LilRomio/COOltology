@@ -21,25 +21,25 @@ const App = () => {
       <Cursor />
       <Navbar />
 
-      <section>
+      <section id="Hello!">
         <Header />
       </section>
-      <section id="about-section">
+      <section id="Cooltology is" style={{ padding: '70px  0', backgroundColor: 'var(--white-color)' }}>
         <About />
       </section>
       <section>
         <Values />
       </section>
-      <section id="weDo-section">
+      <section id="We Do" style={{ padding: '70px  0' }}>
         <WhatWeDo />
       </section>
-      <section>
+      <section id="We Are">
         <Team />
       </section>
       <section>
         <WhyCooltology />
       </section>
-      <section>
+      <section id="Let's talk">
         <Footer />
       </section>
     </div>

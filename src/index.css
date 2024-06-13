@@ -39,12 +39,3 @@ section {
   overflow: hidden;
   padding: 70px 20px;
 }
-
-#about-section {
-  padding: 70px 0;
-  background-color: var(--white-color);
-}
-
-#weDo-section {
-  padding: 70px 0;
-}

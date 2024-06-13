@@ -1,18 +1,18 @@
 import styles from './style.module.scss';
 import { motion } from 'framer-motion';
-import { links, footerLinks } from './data';
+import { items, footerLinks } from './data';
 import { perspective, slideIn } from './anim';
 
 export default function index() {
   return (
     <div className={styles.nav}>
       <div className={styles.body}>
-        {links.map((link, i) => {
-          const { title, href } = link;
+        {['Hello!', 'Cooltology is', 'We Do', 'We Are', "Let's talk"].map((item, i) => {
+          const { title, href } = item;
           return (
-            <div key={`b_${i}`} className={styles.linkContainer}>
+            <div key={`link-${item}`} className={styles.linkContainer}>
               <motion.div href={href} custom={i} variants={perspective} initial="initial" animate="enter" exit="exit">
-                <a>{title}</a>
+                <a href={`#${item}`}>{item}</a>
               </motion.div>
             </div>
           );

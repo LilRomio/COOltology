@@ -1,5 +1,5 @@
 .contact {
-  color: white;
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
     max-width: 1800px;
 
     .title {
-      border-bottom: 1px solid var(--gray-color);
+      border-bottom: 1px solid var(--primary-color);
       padding-bottom: 50px;
       margin-left: 200px;
       margin-right: 200px;
@@ -28,7 +28,7 @@
           overflow: hidden;
 
           img {
-            object-fit: cover;
+            object-fit: contain;
           }
         }
         h2 {
@@ -40,19 +40,17 @@
         margin: 0px;
         font-weight: 300;
       }
-
-      svg {
-        position: absolute;
-        top: 30%;
-        left: 100%;
-      }
     }
     .nav {
       display: flex;
-      gap: 20px;
+      justify-content: space-between;
       margin-top: 100px;
       margin-left: 200px;
       margin-right: 200px;
+
+      p {
+        font-size: 2rem;
+      }
     }
   }
 }
