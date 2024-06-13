@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
+
 import './Team.scss';
 
 const Team = () => {
@@ -23,11 +24,19 @@ const Team = () => {
             <h2 className="bolt-text">Main Cooltogist & Founder </h2>
             <hr />
             <br />
-            <p className="p-text team__description">
-              Political Science breeding Experienced in the triad of agency, corporate and business worlds. Perfect
-              blend of Creativity & Action Insatiable appetite for culture and its intricate dance with people and
-              societies. Strong believer in a brand’s alignment with cultural context & market dynamics.
-            </p>
+            <div className="team__description ">
+              <p className="p-text">Political Science breeding.</p>
+              <br />
+              <p className="p-text">Experienced in the triad of agency, corporate and business worlds.</p>
+              <br />
+              <p className="p-text">Perfect blend of Creativity & Action.</p>
+              <br />
+              <p className="p-text">
+                Insatiable appetite for culture and its intricate dance with people and societies.
+              </p>
+              <br />
+              <p className="p-text">Strong believer in a brand’s alignment with cultural context & market dynamics.</p>
+            </div>
           </div>
         </div>
       </motion.div>
