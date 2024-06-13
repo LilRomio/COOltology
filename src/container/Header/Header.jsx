@@ -87,13 +87,13 @@ const Header = () => {
       <br />
       <div ref={slider} className="head-text slider">
         <p ref={firstText} className="slider__text">
-          A brand is <span>a brand is</span> {''}
+          A brand is <span style={{ fontSize: '3rem' }}>a brand is</span> {''}
           <span className="bold-text" style={{ fontSize: '6rem' }}>
             a brand is.
           </span>
         </p>
         <p ref={secondText} className="slider__text">
-          A brand is <span> a brand is</span> {''}
+          A brand is <span style={{ fontSize: '3rem' }}> a brand is</span> {''}
           <span className="bold-text" style={{ fontSize: '6rem' }}>
             a brand is.
           </span>

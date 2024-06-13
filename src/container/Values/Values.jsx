@@ -6,8 +6,13 @@ import { AppWrap } from '../../wrapper';
 import './Values.scss';
 
 const Values = () => {
-  const phrase =
-    ' The blend between culture, stories, tactics, and the coolness of them all. Their ever changing dynamics. Superfluous, apparently chaotic but with fascinating coherence.';
+  const items = [
+    {
+      text1: 'The blend between culture, stories, tactics, and the coolness of them all.',
+      text2: 'Their ever changing dynamics.',
+      text3: 'Superfluous, apparently chaotic but with fascinating coherence.',
+    },
+  ];
   const description = useRef(null);
   const isInView = useInView(description);
   return (
@@ -18,11 +23,17 @@ const Values = () => {
       <div ref={description} className="description">
         <div className="body">
           <p className="bold-text" style={{ fontSize: '3rem' }}>
-            {phrase.split(' ').map((word, index) => {
+            {items.map((items, index) => {
               return (
                 <div key={index} className="mask">
                   <motion.div variants={slideUp} custom={index} animate={isInView ? 'open' : 'closed'} key={index}>
-                    {word}
+                    <p className="b-text" style={{ fontStyle: 'italic' }}>
+                      {items.text1}
+                    </p>
+                    <br />
+                    <p className="b-text">{items.text2}</p>
+                    <br />
+                    <p className="b-text">{items.text3}</p>
                   </motion.div>
                 </div>
               );

@@ -52,18 +52,13 @@ const WhatWeDo = () => {
         <div className="weDo-grid">
           {items.map((about, index) => (
             <motion.div
-              whileInView={{ opacity: 1 }}
+              whileInView={{ y: [300, 0] }}
+              transition={{ duration: 1, ease: 'easeOut' }}
               whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.5, type: 'tween' }}
               className="weDo-card"
               key={about.title + index}
             >
-              <motion.div
-                whileInView={{ y: [300, 0] }}
-                transition={{ duration: 1, ease: 'easeOut' }}
-                className="bold-text "
-                style={{ fontWeight: 400, fontSize: '1.8rem' }}
-              >
+              <motion.div className="bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
                 <span className="decoration__about"> // </span> {about.title}
               </motion.div>
               <hr />
