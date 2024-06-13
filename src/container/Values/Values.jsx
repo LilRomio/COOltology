@@ -20,11 +20,11 @@ const Values = () => {
           <p className="bold-text" style={{ fontSize: '3rem' }}>
             {phrase.split(' ').map((word, index) => {
               return (
-                <span key={index} className="mask">
-                  <motion.span variants={slideUp} custom={index} animate={isInView ? 'open' : 'closed'} key={index}>
+                <div key={index} className="mask">
+                  <motion.div variants={slideUp} custom={index} animate={isInView ? 'open' : 'closed'} key={index}>
                     {word}
-                  </motion.span>
-                </span>
+                  </motion.div>
+                </div>
               );
             })}
           </p>

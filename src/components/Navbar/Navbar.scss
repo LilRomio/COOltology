@@ -3,7 +3,6 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   background: transparent;
 
@@ -17,7 +16,8 @@
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  margin-top: 20px;
+
   margin-left: 80px;
   mix-blend-mode: difference;
 
@@ -41,9 +41,9 @@
 //   }
 
 .header {
-  position: fixed;
-  top: 30px;
-  right: 20px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 40px;
 
   .menu {
     width: 480px;
