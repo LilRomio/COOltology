@@ -1,11 +1,9 @@
 .description {
-  padding-left: 100px;
-  padding-right: 50px;
-  margin-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
   .body {
-    max-width: 1400px;
+    max-width: 1000px;
     display: flex;
     gap: 50px;
     position: relative;
@@ -13,7 +11,7 @@
       margin: 0px;
 
       span {
-        margin-right: 3px;
+        margin-right: 5px;
       }
       .mask {
         position: relative;

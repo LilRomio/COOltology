@@ -86,15 +86,15 @@ const Header = () => {
       </motion.div>
       <br />
       <div ref={slider} className="head-text slider">
-        <p ref={firstText} className="slider__text">
-          A brand is <span style={{ fontSize: '3rem' }}>a brand is</span> {''}
-          <span className="bold-text" style={{ fontSize: '6rem' }}>
+        <p ref={firstText} className="slider__text" style={{ fontSize: '4rem' }}>
+          A brand is <span style={{ fontSize: '4rem' }}>a brand is</span> {''}
+          <span className="bold-text" style={{ fontSize: '4rem' }}>
             a brand is.
           </span>
         </p>
-        <p ref={secondText} className="slider__text">
-          A brand is <span style={{ fontSize: '3rem' }}> a brand is</span> {''}
-          <span className="bold-text" style={{ fontSize: '6rem' }}>
+        <p ref={secondText} className="slider__text" style={{ fontSize: '4rem' }}>
+          A brand is <span style={{ fontSize: '4rem' }}> a brand is</span> {''}
+          <span className="bold-text" style={{ fontSize: '4rem' }}>
             a brand is.
           </span>
         </p>

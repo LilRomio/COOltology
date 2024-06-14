@@ -21,15 +21,15 @@ const Team = () => {
           <div className="team-text app__flex">
             <h2 className="head-text team-title">Hi, I’m Sandra!</h2>
             <br />
-            <h2 className="bolt-text ribbon">Main Cooltogist & Founder </h2>
-            {/* <hr /> */}
+            <h2 className="bolt-text ">Main Cooltogist & Founder </h2>
+            <hr />
             <br />
             <div className="team__description ">
               <p className="p-text">Political Science breeding.</p>
               <br />
               <p className="p-text">Experienced in the triad of agency, corporate and business worlds.</p>
               <br />
-              <p className="p-text">Perfect blend of Creativity & Action.</p>
+              <p className="p-text">Perfect blend of creativity & action.</p>
               <br />
               <p className="p-text">
                 Insatiable appetite for culture and its intricate dance with people and societies.

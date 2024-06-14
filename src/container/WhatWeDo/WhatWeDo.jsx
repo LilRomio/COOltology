@@ -52,9 +52,9 @@ const WhatWeDo = () => {
         <div className="weDo-grid">
           {items.map((about, index) => (
             <motion.div
-              whileInView={{ y: [300, 0] }}
-              transition={{ duration: 1, ease: 'easeOut' }}
+              whileInView={{ opacity: 1, y: [300, 0] }}
               whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
               className="weDo-card"
               key={about.title + index}
             >
@@ -70,13 +70,13 @@ const WhatWeDo = () => {
               </div>
               <div className="card__description">
                 <p className="p-text " style={{ fontSize: '0.8rem' }}>
-                  <span>&#x1F5F9;</span> {about.description1}
+                  {about.description1}
                 </p>
                 <p className="p-text " style={{ fontSize: '0.8rem' }}>
-                  <span>&#x1F5F9;</span> {about.description2}
+                  {about.description2}
                 </p>
                 <p className="p-text " style={{ fontSize: '0.8rem' }}>
-                  <span>&#x1F5F9;</span> {about.description3}
+                  {about.description3}
                 </p>
               </div>
             </motion.div>

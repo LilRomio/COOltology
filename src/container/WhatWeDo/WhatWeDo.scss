@@ -7,9 +7,9 @@
   display: grid;
   grid-template-columns: 1fr 9fr;
   row-gap: 2rem;
-  column-gap: 5rem;
+  column-gap: 2rem;
   align-items: flex-start;
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 .weDo__title {
@@ -38,21 +38,24 @@
 }
 
 .weDo-card {
-  width: 600px;
-  min-height: 280px;
-  background-color: var(--secondary-color);
+  width: 500px;
+  height: 250px;
+  // background-color: var(--secondary-color);
   border-radius: 15px;
   display: flex;
   justify-content: flex-start;
   text-align: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.4rem 4rem 2rem 3rem;
-  --mask: radial-gradient(40px at 40px 40px, #0000 98%, #000) -40px -40px;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+  padding: 1rem 1rem;
 
-  background: var(--secondary-color);
+  &:nth-child(2) {
+    border: 0.5px solid var(--primary-color);
+  }
+
+  &:nth-child(3) {
+    border: 0.5px solid var(--primary-color);
+  }
 
   @media screen and (min-width: 2000px) {
     width: 370px;
@@ -61,21 +64,14 @@
 }
 
 hr {
-  width: 320px;
+  width: 480px;
   border: none;
-  border-top: 1px solid var(--primary-color);
+  border-top: 0.5px solid var(--primary-color);
 }
 
 .card__description {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 
   row-gap: 15px;
-  span {
-    color: var(--primary-color);
-    font-size: 22px;
-    margin-right: 5px;
-  }
 }

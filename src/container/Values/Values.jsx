@@ -6,36 +6,25 @@ import { AppWrap } from '../../wrapper';
 import './Values.scss';
 
 const Values = () => {
-  const items = [
-    {
-      text1: 'The blend between culture, stories, tactics, and the coolness of them all.',
-      text2: 'Their ever changing dynamics.',
-      text3: 'Superfluous, apparently chaotic but with fascinating coherence.',
-    },
-  ];
+  const phrase =
+    ' The blend between culture, stories, tactics, and the coolness of them all. Their ever changing dynamics. Superfluous, apparently chaotic but with fascinating coherence.';
   const description = useRef(null);
   const isInView = useInView(description);
   return (
     <>
-      <motion.h2 variants={opacity} className="p-text">
-        Cooltology is
-      </motion.h2>
       <div ref={description} className="description">
+        <motion.h2 variants={opacity} className="p-text">
+          Cooltology is
+        </motion.h2>
         <div className="body">
-          <p className="bold-text" style={{ fontSize: '3rem' }}>
-            {items.map((items, index) => {
+          <p className="bold-text" style={{ fontSize: '4rem' }}>
+            {phrase.split(' ').map((word, index) => {
               return (
-                <div key={index} className="mask">
-                  <motion.div variants={slideUp} custom={index} animate={isInView ? 'open' : 'closed'} key={index}>
-                    <p className="b-text" style={{ fontStyle: 'italic' }}>
-                      {items.text1}
-                    </p>
-                    <br />
-                    <p className="b-text">{items.text2}</p>
-                    <br />
-                    <p className="b-text">{items.text3}</p>
-                  </motion.div>
-                </div>
+                <span key={index} className="mask">
+                  <motion.span variants={slideUp} custom={index} animate={isInView ? 'open' : 'closed'} key={index}>
+                    {word}
+                  </motion.span>
+                </span>
               );
             })}
           </p>

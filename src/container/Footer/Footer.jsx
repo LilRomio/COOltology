@@ -18,20 +18,15 @@ const Footer = () => {
       <div className="body">
         <div className="title">
           <span>
-            <div className="imageContainer">
-              <img alt="Sandra" src={images.profileImg2} />
+            <div className="head-text app__flex" style={{ justifyContent: 'space-between', gap: '20px' }}>
+              Let’s talk!
+              <div className="arrow" />
             </div>
-            <h2>Let’s talk!</h2>
-          </span>
-        </div>
 
-        <div className="nav">
-          <div>
             <p> sandra@cooltology.com</p>
-          </div>
-          <div>
+
             <p>+40720880348</p>
-          </div>
+          </span>
         </div>
       </div>
     </motion.div>
