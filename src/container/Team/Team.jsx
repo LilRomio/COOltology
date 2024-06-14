@@ -21,8 +21,8 @@ const Team = () => {
           <div className="team-text app__flex">
             <h2 className="head-text team-title">Hi, I’m Sandra!</h2>
             <br />
-            <h2 className="bolt-text">Main Cooltogist & Founder </h2>
-            <hr />
+            <h2 className="bolt-text ribbon">Main Cooltogist & Founder </h2>
+            {/* <hr /> */}
             <br />
             <div className="team__description ">
               <p className="p-text">Political Science breeding.</p>

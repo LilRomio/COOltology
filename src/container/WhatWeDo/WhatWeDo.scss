@@ -27,11 +27,7 @@
 
 .weDo-grid {
   display: grid;
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
-  align-items: stretch;
-  column-gap: 20px;
 
   row-gap: 3rem;
 
@@ -43,7 +39,7 @@
 
 .weDo-card {
   width: 600px;
-  min-height: 250px;
+  min-height: 280px;
   background-color: var(--secondary-color);
   border-radius: 15px;
   display: flex;
@@ -51,7 +47,12 @@
   text-align: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem 1rem;
+  padding: 0.4rem 4rem 2rem 3rem;
+  --mask: radial-gradient(40px at 40px 40px, #0000 98%, #000) -40px -40px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  background: var(--secondary-color);
 
   @media screen and (min-width: 2000px) {
     width: 370px;

@@ -1,66 +1,56 @@
-.app__about {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
-}
-
-.about__title {
-  flex-direction: column;
-  color: var(--black-color);
-
-  p {
-    font-size: 20px;
-  }
-}
-
 .app__profiles {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 8rem;
-
-  .decoration__about {
-    color: var(--primary-color);
-    font-weight: 800;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    object-fit: fill;
+    z-index: -98;
   }
 }
 
 .app__profile-item {
-  width: 340px;
+  border: 1px solid var(--secondary-color);
+  margin: 5px 0;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 1rem;
+  hr {
+    width: 450px;
+  }
+}
 
-  svg {
-    margin: 4px;
-    width: 25px;
-    height: 25px;
-    color: var(--primary-color);
-  }
-  @media screen and (min-width: 2000px) {
-    width: 370px;
-    margin: 2rem 4rem;
-  }
+.app__profile-item:hover {
+  background: url('../../assets/smoke-drained-into-vortex-abstract-reverse.jpg');
+}
+
+.b-bold-text {
+  margin: 0;
+}
+
+.about-head {
+  font-weight: bold;
 }
 
 .card__description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 10px;
 }
 
-hr {
-  width: 320px;
-  border: none;
-  border-top: 1px solid var(--primary-color);
+.decoration__about {
+  color: var(--primary-color);
 }
 
-button {
-  border: none;
-  background: none;
+.number {
+  color: var(--primary-color);
+  font-size: 10rem;
+  font-weight: 800;
+  position: relative;
+  bottom: -300px;
+  opacity: 1;
 }

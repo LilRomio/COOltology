@@ -12,6 +12,9 @@ import stars from '../assets/stars.png';
 import sun from '../assets/sun.png';
 import planets from '../assets/planets.png';
 import people from '../assets/people.webp';
+import whiteBg1 from '../assets/geometrical-wallpaper-with-minimalist-shapes.jpg';
+import whiteBg2 from '../assets/modern-background-with-white-round-lines.jpg';
+import whiteBg3 from '../assets/modern-background-with-white-shapes.jpg';
 
 export default {
   logoBlack,
@@ -28,4 +31,7 @@ export default {
   sun,
   planets,
   people,
+  whiteBg1,
+  whiteBg2,
+  whiteBg3,
 };

@@ -51,7 +51,7 @@ const Navbar = () => {
         className="app__navbar-logo"
       >
         <a href="/">
-          <img src={isLightBackground ? images.logoBlack : images.logoWhite} alt="logo" />
+          <img src={images.logoWhite} alt="logo" />
         </a>
       </motion.div>
       <div className="header">

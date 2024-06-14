@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { CgMoreO } from 'react-icons/cg';
-import { FaGenderless } from 'react-icons/fa6';
 import './About.scss';
+import AboutCard from './AboutCard';
+import { images } from '../../constants';
 
 const abouts = [
   {
@@ -25,41 +24,15 @@ const abouts = [
   },
 ];
 
-const AboutCard = ({ about, isOpen, toggleCard }) => {
-  return (
-    <motion.div
-      whileInView={{ opacity: 1 }}
-      whileHover={{ scale: 1.1 }}
-      transition={{ duration: 0.5, type: 'tween' }}
-      className="app__profile-item"
-    >
-      <h2 className="b-bold-text about-head" style={{ marginTop: 20, fontWeight: 600, fontSize: '1.5rem' }}>
-        <span className="decoration__about"> // </span> {about.title}
-      </h2>
-      <hr />
-      <button style={{ cursor: 'pointer' }} onClick={toggleCard}>
-        {isOpen ? <FaGenderless /> : <CgMoreO />}
-      </button>
-      {isOpen && (
-        <motion.div
-          className="card__description"
-          whileInView={{ y: [300, 0] }}
-          transition={{ duration: 1, ease: 'easeOut' }}
-        >
-          <p className="b-p-text about-p" style={{ marginTop: 10, fontSize: '1rem' }}>
-            {about.description}
-          </p>
-        </motion.div>
-      )}
-    </motion.div>
-  );
-};
-
 const About = () => {
-  const [openCardId, setOpenCardId] = useState(null);
+  const [hoveredCardId, setHoveredCardId] = useState(null);
 
-  const toggleCard = (id) => {
-    setOpenCardId((prevId) => (prevId === id ? null : id));
+  const handleMouseEnter = (id) => {
+    setHoveredCardId(id);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCardId(null);
   };
 
   return (
@@ -68,7 +41,7 @@ const About = () => {
         <h1 className="b-head-text about-head" style={{ fontSize: '3rem' }}>
           Your Brand Needs:
         </h1>
-        <hr />
+
         <br />
       </div>
 
@@ -77,8 +50,9 @@ const About = () => {
           <AboutCard
             key={about.id}
             about={about}
-            isOpen={openCardId === about.id}
-            toggleCard={() => toggleCard(about.id)}
+            isOpen={hoveredCardId === about.id}
+            onHover={() => handleMouseEnter(about.id)}
+            onLeave={handleMouseLeave}
           />
         ))}
       </div>
