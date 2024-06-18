@@ -33,39 +33,30 @@
 }
 
 .app__team-badge {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   gap: 50px;
+  height: 600px;
 
-  background-size: cover;
   img {
-    max-width: 600px;
+    width: 490px;
     height: 600px;
-    border-radius: 5%;
-    object-fit: contain;
-    border: 0.5px solid var(--secondary-color);
+    object-fit: cover;
   }
 
   .team-text {
     flex-direction: column;
-    margin-left: 30px;
-    text-align: center;
+    width: 500px;
 
     .team-title {
-      font-family: 'sans-serif';
-      font-variation-settings: 'wght' 1, 'MIDL' 0, 'CONT' 0;
       font-size: 3rem;
-      line-height: 1.1;
-      font-weight: 1;
-      transition: font-variation-settings 500ms;
-
-      &:hover {
-        font-weight: 1000;
-        font-variation-settings: 'wght' 1000, 'MIDL' -1000, 'CONT' 250;
-      }
+      font-family: var(--font-base);
+      font-weight: 600;
+    }
+    span {
+      color: var(--primary-color);
     }
 
     p {
@@ -73,9 +64,14 @@
     }
   }
   .team__description {
-    text-align: center;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+    p {
+      text-align: start;
+    }
+  }
   hr {
     margin-top: 3px;
     width: 400px;

@@ -24,7 +24,7 @@ const App = () => {
       <section id="Hello!">
         <Header />
       </section>
-      <section id="Cooltology is" style={{ padding: '70px  30px', backgroundColor: 'var(--white-color)' }}>
+      <section id="Cooltology is" style={{ backgroundColor: 'var(--white-color)' }}>
         <About />
       </section>
       <section>
@@ -33,7 +33,7 @@ const App = () => {
       <section id="We Do" style={{ padding: '70px  0' }}>
         <WhatWeDo />
       </section>
-      <section id="We Are">
+      <section id="We Are" style={{ padding: '70px  30px', backgroundColor: 'var(--white-color)' }}>
         <Team />
       </section>
       <section>

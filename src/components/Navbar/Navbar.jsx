@@ -50,9 +50,7 @@ const Navbar = () => {
         transition={{ duration: 1 }}
         className="app__navbar-logo"
       >
-        <a href="/">
-          <img src={images.logoWhite} alt="logo" />
-        </a>
+        <img src={isLightBackground ? images.logoWhite : images.logoBlack} alt="logo" />
       </motion.div>
       <div className="header">
         <motion.div className="menu" variants={menu} animate={isActive ? 'open' : 'closed'} initial="closed">

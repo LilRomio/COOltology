@@ -8,7 +8,7 @@
   grid-template-columns: 1fr 9fr;
   row-gap: 2rem;
   column-gap: 2rem;
-  align-items: flex-start;
+
   padding: 20px;
 }
 
@@ -29,12 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  row-gap: 3rem;
-
-  .decoration__about {
-    color: var(--primary-color);
-    font-weight: 400;
-  }
+  row-gap: 2rem;
 }
 
 .weDo-card {
@@ -44,29 +39,22 @@
   border-radius: 15px;
   display: flex;
   justify-content: flex-start;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  flex-direction: row;
   padding: 1rem 1rem;
 
-  &:nth-child(2) {
-    border: 0.5px solid var(--primary-color);
-  }
-
-  &:nth-child(3) {
-    border: 0.5px solid var(--primary-color);
+  .decoration__about {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-right: 3px;
   }
 
   @media screen and (min-width: 2000px) {
     width: 370px;
     margin: 2rem 4rem;
   }
-}
-
-hr {
-  width: 480px;
-  border: none;
-  border-top: 0.5px solid var(--primary-color);
 }
 
 .card__description {

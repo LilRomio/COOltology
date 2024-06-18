@@ -19,7 +19,7 @@ export default function index() {
         })}
       </div>
       <div />
-      <motion.div className={styles.footer} style={{ color: 'var(--black-color)' }}>
+      {/* <motion.div className={styles.footer} style={{ color: 'var(--black-color)' }}>
         {footerLinks.map((link, i) => {
           const { title, href } = link;
           return (
@@ -28,7 +28,7 @@ export default function index() {
             </motion.a>
           );
         })}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

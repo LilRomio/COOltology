@@ -1,7 +1,7 @@
 import logoBlack from '../assets/logo.png';
 import logoWhite from '../assets/logo-white.png';
-import headerImg from '../assets/beautiful-rendering-colorful-circles.jpg';
-import headerImg2 from '../assets/abstract-modern-3d-geometric-minimalist-shape.jpg';
+import headerImg from '../assets/purple-abstract-background-element.jpg';
+import headerImg2 from '../assets/bright-dense-violet-cloud-ink.jpg';
 import profileImg1 from '../assets/close-up-beautiful-optical-fiber-details.jpg';
 import profileImg2 from '../assets/close-up-light-trails.jpg';
 import profileImg3 from '../assets/top-view-colorful-translucent-geometric-shapes.jpg';
@@ -15,6 +15,7 @@ import people from '../assets/people.webp';
 import whiteBg1 from '../assets/geometrical-wallpaper-with-minimalist-shapes.jpg';
 import whiteBg2 from '../assets/modern-background-with-white-round-lines.jpg';
 import whiteBg3 from '../assets/modern-background-with-white-shapes.jpg';
+import Arrow from '../assets/arrow.svg';
 
 export default {
   logoBlack,
@@ -34,4 +35,5 @@ export default {
   whiteBg1,
   whiteBg2,
   whiteBg3,
+  Arrow,
 };

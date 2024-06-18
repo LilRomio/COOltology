@@ -80,12 +80,12 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="header-img app__flex">
-            <img src={images.headerImg2} alt="headerImg" />
+            <img src={images.headerImg} alt="headerImg" />
           </div>
         </div>
       </motion.div>
       <br />
-      <div ref={slider} className="head-text slider">
+      {/* <div ref={slider} className="head-text slider">
         <p ref={firstText} className="slider__text" style={{ fontSize: '4rem' }}>
           A brand is <span style={{ fontSize: '4rem' }}>a brand is</span> {''}
           <span className="bold-text" style={{ fontSize: '4rem' }}>
@@ -98,7 +98,7 @@ const Header = () => {
             a brand is.
           </span>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -33,23 +33,23 @@ const AboutCard = ({ about, isOpen, toggleCard }) => {
       transition={{ duration: 0.5, type: 'tween' }}
       className="app__profile-item"
     >
-      <h2 className="b-bold-text about-head" style={{ marginTop: 20, fontWeight: 600, fontSize: '1.5rem' }}>
+      <h2 className="b-head-text about-head" style={{ marginTop: 20, fontWeight: 600, fontSize: '1.5rem' }}>
         <span className="decoration__about"> // </span> {about.title}
       </h2>
-      <hr />
+
       <button style={{ cursor: 'pointer' }} onClick={toggleCard}>
         {isOpen ? <FaGenderless /> : <CgMoreO />}
       </button>
       {isOpen && (
-        <motion.div
+        <div
           className="card__description"
-          whileInView={{ y: [300, 0] }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          // whileInView={{ y: [300, 0] }}
+          // transition={{ duration: 0.3, ease: 'easeOut' }}
         >
           <p className="b-p-text about-p" style={{ marginTop: 10, fontSize: '1rem' }}>
             {about.description}
           </p>
-        </motion.div>
+        </div>
       )}
     </motion.div>
   );
@@ -66,9 +66,9 @@ const About = () => {
     <>
       <div className="about__title app__flex">
         <h1 className="b-head-text about-head" style={{ fontSize: '3rem' }}>
-          Your Brand Needs:
+          Your Brand Needs
         </h1>
-        <hr />
+
         <br />
       </div>
 

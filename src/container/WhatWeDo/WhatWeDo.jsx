@@ -58,26 +58,29 @@ const WhatWeDo = () => {
               className="weDo-card"
               key={about.title + index}
             >
-              <motion.div className="bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
-                <span className="decoration__about"> // </span> {about.title}
-              </motion.div>
-              <hr />
-              <div className="card__subtitle">
-                <p className="p-text " style={{ marginTop: 10, fontSize: '1.2rem' }}>
-                  {about.subtitle}
-                </p>
-                <br />
-              </div>
-              <div className="card__description">
-                <p className="p-text " style={{ fontSize: '0.8rem' }}>
-                  {about.description1}
-                </p>
-                <p className="p-text " style={{ fontSize: '0.8rem' }}>
-                  {about.description2}
-                </p>
-                <p className="p-text " style={{ fontSize: '0.8rem' }}>
-                  {about.description3}
-                </p>
+              <span className="decoration__about"> // </span>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <motion.div className="bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
+                  {about.title}
+                </motion.div>
+
+                <div className="card__subtitle">
+                  <p className="p-text " style={{ textTransform: 'uppercase', fontSize: '1.2rem' }}>
+                    {about.subtitle}
+                  </p>
+                  <br />
+                </div>
+                <div className="card__description">
+                  <p className="p-text " style={{ fontSize: '0.8rem' }}>
+                    {about.description1}
+                  </p>
+                  <p className="p-text " style={{ fontSize: '0.8rem' }}>
+                    {about.description2}
+                  </p>
+                  <p className="p-text " style={{ fontSize: '0.8rem' }}>
+                    {about.description3}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}

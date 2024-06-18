@@ -11,6 +11,7 @@
   //   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 99;
+  font-family: var(--font-base);
 }
 
 .app__navbar-logo {
@@ -52,4 +53,17 @@
     border-radius: 25px;
     position: relative;
   }
+}
+
+.cls-1 {
+  fill: #805ce5;
+}
+
+.cls-1,
+.cls-2 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #0c0814;
 }

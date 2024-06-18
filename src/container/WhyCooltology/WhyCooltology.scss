@@ -1,24 +1,27 @@
 .why__container {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
   padding: 2rem 3rem;
 
   .why__content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     span {
-      color: var(--primary-color);
-      font-size: 1.5rem;
+      img {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+      }
     }
 
     .why__text {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       row-gap: 2rem;
       /* HTML: <div class="ribbon">Your text content</div> */
