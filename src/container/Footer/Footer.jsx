@@ -1,8 +1,8 @@
 import './Footer.scss';
 import { images } from '../../constants';
 import { Link } from 'react-router-dom';
-import { useRef } from 'react';
-import { useScroll, motion, useTransform } from 'framer-motion';
+
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (

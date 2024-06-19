@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
 
 import { slideUp, opacity } from './animation';
-import { AppWrap } from '../../wrapper';
+
 import './Values.scss';
 
 const Values = () => {
