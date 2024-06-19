@@ -58,7 +58,7 @@ const WhatWeDo = () => {
               className="weDo-card"
               key={about.title + index}
             >
-              <span className="decoration__about"> // </span>
+              <span className="decoration__weDo"> // </span>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <motion.div className="b-bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
                   {about.title}
@@ -70,7 +70,7 @@ const WhatWeDo = () => {
                   </p>
                   <br />
                 </div>
-                <div className="card__description">
+                <div className="card__description-weDo">
                   <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
                     {about.description1}
                   </p>
