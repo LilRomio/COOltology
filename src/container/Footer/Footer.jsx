@@ -47,8 +47,8 @@ const Footer = () => {
             <p> All Rights Reserved</p>
           </div>
           <div>
-            <Link style={{ textDecoration: 'none', color: 'var(--white-color)' }} to="/private-policy" target="_blank">
-              Private Policy
+            <Link style={{ textDecoration: 'none', color: 'var(--white-color)' }} to="/privacy-policy" target="_blank">
+              Privacy Policy
             </Link>
           </div>
         </div>

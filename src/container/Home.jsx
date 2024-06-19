@@ -20,13 +20,13 @@ const Home = () => {
       <Cursor />
       <Navbar />
 
-      <section id="Hello!">
+      <section id="Hello!" style={{ backgroundColor: 'var(--white-color)' }}>
         <Header />
       </section>
-      <section id="Cooltology is" style={{ backgroundColor: 'var(--white-color)' }}>
+      <section style={{ backgroundColor: 'var(--white-color)' }}>
         <About />
       </section>
-      <section>
+      <section id="Cooltology is">
         <Values />
       </section>
       <section id="We Do" style={{ padding: '70px  0' }}>

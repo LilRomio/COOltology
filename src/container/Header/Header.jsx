@@ -80,7 +80,7 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="header-img app__flex">
-            <img src={images.headerImg} alt="headerImg" />
+            <img src={images.headerImg2} alt="headerImg" />
           </div>
         </div>
       </motion.div>
