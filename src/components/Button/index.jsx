@@ -1,9 +1,30 @@
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import styles from './style.module.scss';
 
 export default function Button({ isActive, toggleMenu }) {
+  const buttonRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (buttonRef.current && !buttonRef.current.contains(event.target)) {
+        toggleMenu();
+      }
+    };
+
+    if (isActive) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isActive, toggleMenu]);
+
   return (
-    <div className={styles.button}>
+    <div ref={buttonRef} className={styles.button}>
       <motion.div
         className={styles.slider}
         animate={{ top: isActive ? '-100%' : '0%' }}

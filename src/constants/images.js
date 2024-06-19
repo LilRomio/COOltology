@@ -1,5 +1,5 @@
-import logoBlack from '../assets/logo.png';
-import logoWhite from '../assets/logo-white.png';
+import logoBlack from '../assets/logo.svg';
+import logoWhite from '../assets/logo-white.svg';
 import headerImg from '../assets/purple-abstract-background-element.jpg';
 import headerImg2 from '../assets/geometrical-wallpaper-with-minimalist-shapes.jpg';
 import profileImg1 from '../assets/close-up-beautiful-optical-fiber-details.jpg';
