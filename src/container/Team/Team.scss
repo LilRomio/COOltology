@@ -54,8 +54,9 @@
       font-size: 3rem;
       font-family: var(--font-base);
       font-weight: 600;
+      display: flex;
     }
-    span {
+    .hi {
       color: var(--primary-color);
     }
 

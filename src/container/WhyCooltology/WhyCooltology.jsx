@@ -42,26 +42,49 @@ const WhyCooltology = () => {
 
                     <p className="p-text" style={{ fontSize: '1.4rem' }}>
                       <span>
-                        <img src={images.Arrow} alt="Arrow" />
+                        <motion.img
+                          whileInView={{ opacity: 1, x: [300, 0] }}
+                          whileHover={{ scale: 1.2 }}
+                          transition={{ duration: 0.5, ease: 'easeOut' }}
+                          src={images.Arrow}
+                          alt="Arrow"
+                        />
                       </span>
-
                       {items.text1}
                     </p>
                     <p className="p-text" style={{ fontSize: '1.4rem' }}>
                       <span>
-                        <img src={images.Arrow} alt="Arrow" />
+                        <motion.img
+                          whileInView={{ opacity: 1, x: [300, 0] }}
+                          whileHover={{ scale: 1.2 }}
+                          transition={{ duration: 0.5, ease: 'easeOut' }}
+                          src={images.Arrow}
+                          alt="Arrow"
+                        />
                       </span>
                       {items.text2}
                     </p>
                     <p className="p-text" style={{ fontSize: '1.4rem' }}>
                       <span>
-                        <img src={images.Arrow} alt="Arrow" />
+                        <motion.img
+                          whileInView={{ opacity: 1, x: [300, 0] }}
+                          whileHover={{ scale: 1.2 }}
+                          transition={{ duration: 0.5, ease: 'easeOut' }}
+                          src={images.Arrow}
+                          alt="Arrow"
+                        />
                       </span>
                       {items.text3}
                     </p>
                     <p className="p-text" style={{ fontSize: '1.4rem' }}>
                       <span>
-                        <img src={images.Arrow} alt="Arrow" />
+                        <motion.img
+                          whileInView={{ opacity: 1, x: [300, 0] }}
+                          whileHover={{ scale: 1.2 }}
+                          transition={{ duration: 0.5, ease: 'easeOut' }}
+                          src={images.Arrow}
+                          alt="Arrow"
+                        />
                       </span>
                       {items.text4}
                     </p>

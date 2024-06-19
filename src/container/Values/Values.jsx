@@ -17,7 +17,7 @@ const Values = () => {
           Cooltology is
         </motion.h2>
         <div className="body">
-          <p className="bold-text" style={{ fontSize: '4rem' }}>
+          <p className="bold-text" style={{ fontSize: '4.5rem' }}>
             {phrase.split(' ').map((word, index) => {
               return (
                 <span key={index} className="mask">

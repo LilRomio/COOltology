@@ -80,7 +80,7 @@
   text-align: left;
   color: var(--white-color);
   line-height: 1.5;
-
+  font-family: var(--font-secondary);
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
   }
@@ -90,7 +90,7 @@
   font-size: 0.8rem;
   text-align: center;
   color: var(--black-color);
-
+  font-family: var(--font-secondary);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -99,7 +99,7 @@
 }
 .bold-text {
   font-size: 1rem;
-  font-weight: 600;
+
   color: var(--white-color);
   font-family: var(--font-base);
   text-align: left;

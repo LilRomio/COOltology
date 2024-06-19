@@ -16,6 +16,7 @@ import whiteBg1 from '../assets/geometrical-wallpaper-with-minimalist-shapes.jpg
 import whiteBg2 from '../assets/modern-background-with-white-round-lines.jpg';
 import whiteBg3 from '../assets/modern-background-with-white-shapes.jpg';
 import Arrow from '../assets/arrow.svg';
+import Symbol from '../assets/logo-icon.svg';
 
 export default {
   logoBlack,
@@ -36,4 +37,5 @@ export default {
   whiteBg2,
   whiteBg3,
   Arrow,
+  Symbol,
 };

@@ -16,7 +16,15 @@ const Team = () => {
           <div className="team-text app__flex">
             <div className="team__description ">
               <h2 className="b-head-text team-title">
-                <span>Hi</span>, I’m Sandra!
+                <motion.div
+                  whileInView={{ opacity: 1, x: [100, 0] }}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
+                  className="hi"
+                >
+                  Hi
+                </motion.div>
+                <div>, I’m Sandra!</div>
               </h2>
 
               <h2 className="b-head-text " style={{ fontSize: '1.6rem' }}>
