@@ -46,7 +46,7 @@ const WhatWeDo = () => {
     <>
       <div className="container">
         <div className="weDo-info">
-          <h1 className="p-text weDo-title">We Do</h1>
+          <h1 className="b-p-text weDo-title">We Do</h1>
         </div>
 
         <div className="weDo-grid">
@@ -60,24 +60,24 @@ const WhatWeDo = () => {
             >
               <span className="decoration__about"> // </span>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <motion.div className="bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
+                <motion.div className="b-bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
                   {about.title}
                 </motion.div>
 
                 <div className="card__subtitle">
-                  <p className="p-text " style={{ textTransform: 'uppercase', fontSize: '1.2rem' }}>
+                  <p className="b-p-text " style={{ textTransform: 'uppercase', fontSize: '1.2rem' }}>
                     {about.subtitle}
                   </p>
                   <br />
                 </div>
                 <div className="card__description">
-                  <p className="p-text " style={{ fontSize: '0.8rem' }}>
+                  <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
                     {about.description1}
                   </p>
-                  <p className="p-text " style={{ fontSize: '0.8rem' }}>
+                  <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
                     {about.description2}
                   </p>
-                  <p className="p-text " style={{ fontSize: '0.8rem' }}>
+                  <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
                     {about.description3}
                   </p>
                 </div>

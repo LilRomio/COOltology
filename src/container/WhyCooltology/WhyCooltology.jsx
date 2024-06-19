@@ -20,10 +20,13 @@ const WhyCooltology = () => {
   const isInView = useInView(description);
   return (
     <>
-      <motion.h2 variants={opacity} className="p-text">
-        Why Cooltology?
-      </motion.h2>
       <div ref={description} className="why__container">
+        <div className="why__title">
+          <motion.h2 variants={opacity} className="p-text">
+            Why Cooltology?
+          </motion.h2>
+        </div>
+
         <div className="body">
           <p className="bold-text" style={{ fontSize: '3rem' }}>
             {items.map((items, index) => {
