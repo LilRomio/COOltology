@@ -32,8 +32,9 @@ const AboutCard = ({ about, isOpen, toggleCard }) => {
       whileHover={{ scale: 1.1 }}
       transition={{ duration: 0.5, type: 'tween' }}
       className="app__profile-item"
+      style={{ position: 'relative', overflow: 'visible' }} // Ensure relative positioning
     >
-      <h2 className="head-text about-head" style={{ marginTop: 20, fontWeight: 600, fontSize: '1.5rem' }}>
+      <h2 className="head-text about-head" style={{ marginTop: 20, fontWeight: 600, fontSize: '1.6rem' }}>
         <span className="decoration__about"> // </span> {about.title}
       </h2>
 
@@ -46,7 +47,7 @@ const AboutCard = ({ about, isOpen, toggleCard }) => {
           // whileInView={{ y: [300, 0] }}
           // transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-          <p className="p-text about-p" style={{ marginTop: 10, fontSize: '1rem' }}>
+          <p className="p-text about-p" style={{ fontSize: '1.3rem' }}>
             {about.description}
           </p>
         </div>
