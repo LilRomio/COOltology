@@ -14,14 +14,13 @@
   @media screen and (max-width: 450px) {
     padding-top: 50px;
   }
-  p {
-    font-size: 20px;
-  }
-  hr {
-    width: 400px;
 
-    border-top: 0.5px solid var(--primary-color);
-    overflow: hidden;
+  h1 {
+    font-size: 3rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -37,7 +36,7 @@
     font-weight: 800;
   }
   @media screen and (max-width: 450px) {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -53,11 +52,16 @@
   @media screen and (max-width: 450px) {
     margin-top: 2rem;
   }
-  hr {
-    width: 200px;
 
-    border-top: 0.5px solid var(--primary-color);
-    overflow: hidden;
+  h2 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 350px) {
+      margin-top: 0px;
+      font-size: 0.8rem;
+    }
   }
 
   svg {
@@ -68,13 +72,21 @@
     @media screen and (max-width: 450px) {
       margin-top: 1rem;
     }
+
+    @media screen and (max-width: 350px) {
+      width: 15px;
+      height: 15px;
+    }
   }
   @media screen and (min-width: 2000px) {
     width: 370px;
     margin: 2rem 4rem;
   }
-  @media screen and (min-width: 450px) {
+  @media screen and (max-width: 450px) {
     margin-top: 4rem;
+  }
+  @media screen and (max-width: 350px) {
+    margin-top: 0.5rem;
   }
 }
 
@@ -94,6 +106,13 @@
 
   @media screen and (max-width: 450px) {
     background-color: var(--secondary-color);
+  }
+  p {
+    font-size: 1.3rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
   }
 }
 
