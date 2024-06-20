@@ -93,10 +93,6 @@
   font-family: var(--font-secondary);
   line-height: 1.5;
 
-  @media screen and (max-width: 450px) {
-    font-size: 0.5rem;
-  }
-
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
   }
@@ -216,5 +212,11 @@
   .app__navigation,
   .app__social {
     display: none;
+  }
+}
+
+.weDo__section {
+  @media screen and (max-width: 500px) {
+    height: 200vh;
   }
 }

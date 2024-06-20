@@ -29,7 +29,11 @@ const Home = () => {
       <section id="Cooltology is">
         <Values />
       </section>
-      <section id="We Do" style={{ padding: '70px  0px', backgroundColor: 'var(--white-color)' }}>
+      <section
+        className="weDo__section"
+        id="We Do"
+        style={{ padding: '70px  0px', backgroundColor: 'var(--white-color)' }}
+      >
         <WhatWeDo />
       </section>
       <section id="We Are" style={{ padding: '70px  0px', backgroundColor: 'var(--white-color)' }}>

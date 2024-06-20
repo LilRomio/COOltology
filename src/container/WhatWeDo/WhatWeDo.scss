@@ -16,12 +16,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 2rem;
   }
 
   @media screen and (max-width: 350px) {
-    padding: 20px 20px;
-    justify-content: center;
+    padding: 2rem 1rem;
   }
 }
 
@@ -65,16 +64,10 @@
 
   .b-bold-text {
     font-size: 1.8rem;
-    @media screen and (max-width: 450px) {
-      font-size: 1rem;
-    }
   }
 
   .card__subtitle p {
     font-size: 1.2rem;
-    @media screen and (max-width: 450px) {
-      font-size: 0.8rem;
-    }
   }
 
   .decoration__weDo {
@@ -84,13 +77,13 @@
     margin-right: 3px;
 
     @media screen and (max-width: 450px) {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
   }
   @media screen and (max-width: 450px) {
     width: 380px;
-    height: 120px;
-    padding: 0 5px;
+    height: 300px;
+    padding: 1rem 1rem;
   }
 
   @media screen and (min-width: 2000px) {
