@@ -7,7 +7,13 @@
 .about__title {
   flex-direction: column;
   color: var(--black-color);
+  @media screen and (max-width: 1200px) {
+    margin-top: 20px;
+  }
 
+  @media screen and (max-width: 450px) {
+    padding-top: 50px;
+  }
   p {
     font-size: 20px;
   }
@@ -30,6 +36,9 @@
     color: var(--primary-color);
     font-weight: 800;
   }
+  @media screen and (max-width: 450px) {
+    margin-top: 2rem;
+  }
 }
 
 .app__profile-item {
@@ -40,6 +49,10 @@
   align-items: center;
   flex-direction: column;
   margin: 1rem;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 2rem;
+  }
   hr {
     width: 200px;
 
@@ -52,10 +65,16 @@
     width: 25px;
     height: 25px;
     color: var(--primary-color);
+    @media screen and (max-width: 450px) {
+      margin-top: 1rem;
+    }
   }
   @media screen and (min-width: 2000px) {
     width: 370px;
     margin: 2rem 4rem;
+  }
+  @media screen and (min-width: 450px) {
+    margin-top: 4rem;
   }
 }
 
@@ -72,6 +91,10 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add some shadow for better visibility
   padding: 1rem; // Optional: Add some padding
   z-index: 1; // Ensure it appears abov
+
+  @media screen and (max-width: 450px) {
+    background-color: var(--secondary-color);
+  }
 }
 
 button {

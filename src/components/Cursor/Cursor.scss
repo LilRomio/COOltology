@@ -5,4 +5,8 @@
   border: 1px solid white;
   position: fixed;
   z-index: 999;
+
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
 }

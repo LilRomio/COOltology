@@ -25,6 +25,8 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -38,4 +40,8 @@ section {
   scroll-snap-align: center;
   overflow: hidden;
   padding: 70px 30px;
+
+  @media screen and (max-width: 450px) {
+    padding: 0px 0px;
+  }
 }
