@@ -60,24 +60,27 @@ const WhatWeDo = () => {
             >
               <span className="decoration__weDo"> // </span>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <motion.div className="b-bold-text " style={{ fontWeight: 400, fontSize: '1.8rem' }}>
+                <motion.div className="b-bold-text " style={{ fontWeight: 400, fontSize: '1.8rem', textAlign: 'left' }}>
                   {about.title}
                 </motion.div>
 
                 <div className="card__subtitle">
-                  <p className="b-p-text " style={{ textTransform: 'uppercase', fontSize: '1.2rem' }}>
+                  <p
+                    className="b-p-text "
+                    style={{ textTransform: 'uppercase', fontSize: '1.2rem', textAlign: 'left' }}
+                  >
                     {about.subtitle}
                   </p>
                   <br />
                 </div>
                 <div className="card__description-weDo">
-                  <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
+                  <p className="b-p-text " style={{ fontSize: '0.9rem', textAlign: 'left' }}>
                     {about.description1}
                   </p>
-                  <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
+                  <p className="b-p-text " style={{ fontSize: '0.9rem', textAlign: 'left' }}>
                     {about.description2}
                   </p>
-                  <p className="b-p-text " style={{ fontSize: '0.8rem' }}>
+                  <p className="b-p-text " style={{ fontSize: '0.9rem', textAlign: 'left' }}>
                     {about.description3}
                   </p>
                 </div>
