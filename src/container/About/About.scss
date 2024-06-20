@@ -20,6 +20,7 @@
 
     @media screen and (max-width: 450px) {
       font-size: 1.8rem;
+      margin-top: 20px;
     }
   }
 }
@@ -58,9 +59,9 @@
     font-weight: 600;
     font-size: 1.6rem;
 
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 450px) {
       margin-top: 0px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
 
