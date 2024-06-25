@@ -52,7 +52,7 @@ const WhatWeDo = () => {
         <div className="weDo-grid">
           {items.map((about, index) => (
             <motion.div
-              whileInView={{ opacity: 1, y: [300, 0] }}
+              // whileInView={{ opacity: 1, y: [300, 0] }}
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
               className="weDo-card"

@@ -36,7 +36,11 @@ const Home = () => {
       >
         <WhatWeDo />
       </section>
-      <section id="We Are" style={{ padding: '70px  0px', backgroundColor: 'var(--white-color)' }}>
+      <section
+        className="team__section"
+        id="We Are"
+        style={{ padding: '70px  0px', backgroundColor: 'var(--white-color)' }}
+      >
         <Team />
       </section>
       <section>

@@ -47,6 +47,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    &:hover {
+      scale: 1;
+    }
   }
 }
 
@@ -102,9 +106,6 @@
   align-items: flex-start;
   text-align: left;
   row-gap: 15px;
-
-  p {
-  }
 
   @media screen and (max-width: 450px) {
     row-gap: 5px;

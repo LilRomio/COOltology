@@ -1,6 +1,7 @@
 .app__team {
   width: 100%;
   height: 100%;
+  display: flex;
   flex-direction: row;
 
   @media screen and (min-width: 2000px) {
@@ -16,20 +17,11 @@
   }
 }
 
-.app__team-info {
-  flex: 0.65;
+.app__header-info {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-
-  margin: 0 2rem;
-
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-    margin-right: 0rem;
-  }
+  justify-content: center;
+  align-items: center;
 }
 
 .app__team-badge {
@@ -40,51 +32,75 @@
   gap: 50px;
   height: 600px;
 
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 450px) {
+    gap: 20px;
+  }
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+
+  .team-title {
+    font-size: 3rem;
+    font-family: var(--font-base);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hi {
+    color: var(--primary-color);
+  }
+
+  p {
+    font-size: 20px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.team__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    text-align: start;
+  }
+}
+
+.team-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
     width: 490px;
     height: 580px;
     object-fit: cover;
-  }
 
-  .team-text {
-    flex-direction: column;
-    width: 500px;
-
-    .team-title {
-      font-size: 3rem;
-      font-family: var(--font-base);
-      font-weight: 600;
-      display: flex;
-    }
-    .hi {
-      color: var(--primary-color);
+    @media screen and (max-width: 1200px) {
+      width: 400px;
+      height: 480px;
+      margin-bottom: 1.5rem;
     }
 
-    p {
-      font-size: 20px;
+    @media screen and (max-width: 450px) {
+      width: 300px;
+      height: auto;
+      margin-bottom: 1.5rem;
     }
-  }
-  .team__description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    p {
-      text-align: start;
-    }
-  }
-  hr {
-    margin-top: 3px;
-    width: 400px;
-  }
-}
-
-.tag-cmp {
-  flex-direction: column;
-  margin-top: 3rem;
-
-  @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 }

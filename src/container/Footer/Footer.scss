@@ -3,60 +3,95 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: relative;
+
   .body {
-    padding-top: 250px;
+    padding-top: 100px; /* Adjust padding as needed */
     width: 100%;
     max-width: 1800px;
 
     .title {
-      padding: 1rem 1rem;
+      padding: 1rem;
 
       .symbol {
-        width: 100px;
-        height: 100px;
-
-        margin-bottom: -20px;
+        width: 80px; /* Adjust size of symbol as needed */
+        height: 80px;
+        margin-bottom: -10px; /* Adjust margin as needed */
       }
 
       .arrow {
-        width: 35px;
-        height: 8px;
-        margin-right: 10px;
+        width: 25px; /* Adjust size of arrow as needed */
+        height: 6px;
+        margin-right: 8px; /* Adjust margin as needed */
       }
 
-      position: relative;
       span {
         display: flex;
-
         align-items: center;
         justify-content: space-between;
       }
     }
 
     .contact {
-      padding: 1rem 1rem;
-      border-bottom: 0.3px solid var(--primary-color);
-      border-top: 0.3px solid var(--primary-color);
+      padding: 1rem;
+      border: 0.3px solid var(--primary-color); /* Adjust border width and color */
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: end;
+      flex-direction: row; /* Adjust flex-direction as needed */
+      justify-content: space-between; /* Adjust alignment as needed */
+      align-items: center; /* Adjust alignment as needed */
 
       a {
-        font-size: 1.4rem;
+        font-size: 1.2rem; /* Adjust font size as needed */
         text-decoration: none;
         color: var(--white-color);
+        margin-bottom: 0.5rem; /* Adjust margin as needed */
       }
     }
 
     .policy {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: end;
-      padding: 3.5rem 1rem;
+      flex-direction: row; /* Adjust flex-direction as needed */
+      justify-content: space-between; /* Adjust alignment as needed */
+      align-items: center; /* Adjust alignment as needed */
+      padding: 2rem 1rem; /* Adjust padding as needed */
+
+      a {
+        font-size: 1.2rem; /* Adjust font size as needed */
+        text-decoration: none;
+        color: var(--white-color);
+        margin-bottom: 0.5rem; /* Adjust margin as needed */
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .body {
+      padding-top: 200px; /* Adjust padding as needed */
+
+      .title {
+        .symbol {
+          width: 60px; /* Adjust size of symbol as needed */
+          height: 60px;
+          margin-bottom: -5px; /* Adjust margin as needed */
+        }
+
+        .arrow {
+          width: 20px; /* Adjust size of arrow as needed */
+          height: 5px;
+          margin-right: 6px; /* Adjust margin as needed */
+        }
+      }
+
+      .contact,
+      .policy {
+        flex-direction: column; /* Adjust to column layout on smaller screens */
+        align-items: center; /* Center align items */
+        gap: 30px;
+
+        a {
+          font-size: 1rem; /* Adjust font size as needed */
+        }
+      }
     }
   }
 }

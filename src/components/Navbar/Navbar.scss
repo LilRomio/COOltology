@@ -22,7 +22,15 @@
   margin-top: 20px;
 
   margin-left: 40px;
-  mix-blend-mode: difference;
+
+  .fixed_menu {
+    font-weight: 700;
+    position: fixed;
+    width: 140px;
+    mix-blend-mode: difference;
+    left: 0;
+    z-index: 2;
+  }
 
   @media screen and (max-width: 450px) {
     margin-left: 10px;
