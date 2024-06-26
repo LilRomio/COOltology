@@ -29,24 +29,20 @@ const AboutCard = ({ about, isOpen, toggleCard }) => {
   return (
     <motion.div
       whileInView={{ opacity: 1 }}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.5, type: 'tween' }}
       className="app__profile-item"
-      style={{ position: 'relative', overflow: 'visible' }} // Ensure relative positioning
+      style={{ position: 'relative', overflow: 'visible' }}
     >
       <h2 className="head-text about-head">
-        <span className="decoration__about"> // </span> {about.title}
+        <span className="decoration__about">//</span> {about.title}
       </h2>
 
       <button style={{ cursor: 'pointer' }} onClick={toggleCard}>
         {isOpen ? <FaGenderless /> : <CgMoreO />}
       </button>
       {isOpen && (
-        <div
-          className="card__description"
-          // whileInView={{ y: [300, 0] }}
-          // transition={{ duration: 0.3, ease: 'easeOut' }}
-        >
+        <div className="card__description">
           <p className="p-text about-p">{about.description}</p>
         </div>
       )}
@@ -65,7 +61,6 @@ const About = () => {
     <>
       <div className="about__title app__flex">
         <h1 className="head-text about-head">Your Brand Needs</h1>
-
         <br />
       </div>
 

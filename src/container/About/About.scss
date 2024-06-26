@@ -96,14 +96,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute; // Make the description container absolute
-  top: 100%; // Position it below the card
+  position: relative; // Change to relative positioning
+  top: auto; // Reset the top property
   left: 0;
   width: 100%;
-
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add some shadow for better visibility
   padding: 1rem; // Optional: Add some padding
-  z-index: 1; // Ensure it appears abov
+  z-index: 1; // Ensure it appears above
 
   @media screen and (max-width: 450px) {
     background-color: var(--secondary-color);

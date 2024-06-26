@@ -39,11 +39,9 @@ const WhyCooltology = () => {
                     animate={isInView ? 'open' : 'closed'}
                     key={index}
                   >
-                    <h1 className="head-text" style={{ textAlign: 'left', fontSize: '3.5rem' }}>
-                      {items.title}
-                    </h1>
+                    <h1 className="head-text">{items.title}</h1>
 
-                    <p className="p-text" style={{ fontSize: '1.4rem' }}>
+                    <p className="p-text">
                       <span>
                         <motion.img
                           whileInView={{ opacity: 1, x: [300, 0] }}
@@ -55,7 +53,7 @@ const WhyCooltology = () => {
                       </span>
                       {items.text1}
                     </p>
-                    <p className="p-text" style={{ fontSize: '1.4rem' }}>
+                    <p className="p-text">
                       <span>
                         <motion.img
                           whileInView={{ opacity: 1, x: [500, 0] }}
@@ -67,7 +65,7 @@ const WhyCooltology = () => {
                       </span>
                       {items.text2}
                     </p>
-                    <p className="p-text" style={{ fontSize: '1.4rem' }}>
+                    <p className="p-text">
                       <span>
                         <motion.img
                           whileInView={{ opacity: 1, x: [700, 0] }}
@@ -79,7 +77,7 @@ const WhyCooltology = () => {
                       </span>
                       {items.text3}
                     </p>
-                    <p className="p-text" style={{ fontSize: '1.4rem' }}>
+                    <p className="p-text">
                       <span>
                         <motion.img
                           whileInView={{ opacity: 1, x: [900, 0] }}
@@ -91,9 +89,7 @@ const WhyCooltology = () => {
                       </span>
                       {items.text4}
                     </p>
-                    <h2 className="bold-text" style={{ fontSize: '3.5rem' }}>
-                      {items.subtitle}
-                    </h2>
+                    <h2 className="bold-text">{items.subtitle}</h2>
                   </motion.div>
                 </div>
               );

@@ -8,10 +8,12 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    justify-content: center;
   }
 
   @media screen and (max-width: 768px) {
     padding: 1rem 2rem;
+    justify-content: center;
   }
 
   @media screen and (max-width: 450px) {
@@ -49,8 +51,8 @@
         margin-right: 10px;
 
         @media screen and (max-width: 450px) {
-          width: 15px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
         }
       }
     }
@@ -63,16 +65,17 @@
       row-gap: 2rem;
       width: 100%;
 
-      .head-text {
+      h1,
+      h2 {
         font-size: 3.5rem;
         text-align: left;
 
         @media screen and (max-width: 768px) {
-          font-size: 3rem;
+          font-size: 2rem;
         }
 
         @media screen and (max-width: 450px) {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -81,11 +84,11 @@
         margin-bottom: 1rem;
 
         @media screen and (max-width: 768px) {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
 
         @media screen and (max-width: 450px) {
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
       }
     }
