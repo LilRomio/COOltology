@@ -1,15 +1,19 @@
-.app__navbar {
+.navbar {
   width: 100%;
 
   display: flex;
   justify-content: space-between;
+}
 
+.app__navbar {
   // background: transparent;
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   //   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
+  right: 1px;
+  top: 10px;
   z-index: 99;
   font-family: var(--font-base);
   @media screen and (max-width: 450px) {

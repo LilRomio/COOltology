@@ -14,9 +14,7 @@ const Values = () => {
     <>
       <div ref={description} className="description">
         <div className="values__title">
-          <motion.h2 variants={opacity} className="p-text">
-            Cooltology is
-          </motion.h2>
+          <h2 className="p-text">Cooltology is</h2>
         </div>
 
         <div className="body">

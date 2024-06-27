@@ -23,6 +23,11 @@
         width: 25px; /* Adjust size of arrow as needed */
         height: 6px;
         margin-right: 8px; /* Adjust margin as needed */
+
+        @media screen and (max-width: 450px) {
+          width: 15px;
+          height: 6px;
+        }
       }
 
       span {
