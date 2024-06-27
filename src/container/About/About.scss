@@ -8,7 +8,7 @@
   flex-direction: column;
   color: var(--white-color);
   @media screen and (max-width: 1200px) {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   @media screen and (max-width: 450px) {
@@ -40,7 +40,7 @@
   @media screen and (max-width: 1180px) {
     flex-direction: column;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 1000px) {
     margin-top: 0.5rem;
   }
 }
@@ -83,7 +83,7 @@
     width: 370px;
     margin: 2rem 4rem;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 600px) {
     margin-top: 1rem;
   }
   @media screen and (max-width: 350px) {
