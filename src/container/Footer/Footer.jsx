@@ -23,7 +23,7 @@ const Footer = () => {
           >
             Let’s talk
             <motion.span
-              whileInView={{ opacity: 1, x: [300, 0] }}
+              whileInView={{ opacity: 1, x: [100, 0] }}
               whileHover={{ scale: 1.2 }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
               className="arrow"
