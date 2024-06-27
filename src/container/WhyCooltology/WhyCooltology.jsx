@@ -56,7 +56,7 @@ const WhyCooltology = () => {
                     <p className="p-text">
                       <span>
                         <motion.img
-                          whileInView={{ opacity: 1, x: [500, 0] }}
+                          whileInView={{ opacity: 1, x: [300, 0] }}
                           whileHover={{ scale: 1.2 }}
                           transition={{ duration: 0.7, ease: 'easeOut' }}
                           src={images.Arrow}
@@ -68,7 +68,7 @@ const WhyCooltology = () => {
                     <p className="p-text">
                       <span>
                         <motion.img
-                          whileInView={{ opacity: 1, x: [700, 0] }}
+                          whileInView={{ opacity: 1, x: [300, 0] }}
                           whileHover={{ scale: 1.2 }}
                           transition={{ duration: 0.9, ease: 'easeOut' }}
                           src={images.Arrow}
@@ -80,7 +80,7 @@ const WhyCooltology = () => {
                     <p className="p-text">
                       <span>
                         <motion.img
-                          whileInView={{ opacity: 1, x: [900, 0] }}
+                          whileInView={{ opacity: 1, x: [300, 0] }}
                           whileHover={{ scale: 1.2 }}
                           transition={{ duration: 1.1, ease: 'easeOut' }}
                           src={images.Arrow}

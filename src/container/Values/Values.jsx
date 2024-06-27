@@ -13,9 +13,12 @@ const Values = () => {
   return (
     <>
       <div ref={description} className="description">
-        <motion.h2 variants={opacity} className="p-text">
-          Cooltology is
-        </motion.h2>
+        <div className="values__title">
+          <motion.h2 variants={opacity} className="p-text">
+            Cooltology is
+          </motion.h2>
+        </div>
+
         <div className="body">
           <p className="bold-text">
             {phrase.split(' ').map((word, index) => {

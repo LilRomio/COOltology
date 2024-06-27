@@ -18,6 +18,7 @@ const Home = () => {
     <div>
       <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
       <Cursor />
+
       <Navbar />
 
       <section id="Hello!" style={{ backgroundColor: 'var(--white-color)' }}>

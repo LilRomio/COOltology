@@ -1,30 +1,28 @@
 .why__container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+
   height: 100vh;
-  padding: 2rem 3rem;
+
+  padding: 2rem 1rem;
   flex-direction: column;
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    justify-content: center;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 1rem 2rem;
-    justify-content: center;
+    padding: 5rem 1rem;
   }
 
   @media screen and (max-width: 450px) {
-    padding: 1rem;
+    padding: 5rem 1rem;
   }
 
   .why__title {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
 
     @media screen and (min-width: 1200px) {
       width: 20%;
@@ -67,7 +65,7 @@
 
       h1,
       h2 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         text-align: left;
 
         @media screen and (max-width: 768px) {

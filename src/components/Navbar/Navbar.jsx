@@ -9,7 +9,7 @@ const getMenuVariants = (isMobile) => ({
     width: isMobile ? '320px' : '480px',
     height: isMobile ? '400px' : '650px',
     top: isMobile ? '10px' : '-25px',
-    right: isMobile ? '80px' : '-25px',
+    right: isMobile ? '0px' : '-25px',
     transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
