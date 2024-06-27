@@ -1,6 +1,6 @@
-// Global Styles
 .app {
   background-color: var(--black-color);
+
   font-family: var(--font-secondary);
 }
 
@@ -14,6 +14,7 @@
 
 .app__container {
   width: 100%;
+
   display: flex;
   flex-direction: row;
 }
@@ -34,13 +35,16 @@
   }
 }
 
-// Typography Styles
-.head-text,
-.b-head-text {
+.head-text {
   font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
+  color: var(--white-color);
   font-family: var(--font-base);
+
+  span {
+    color: var(--black-color);
+  }
 
   @media screen and (min-width: 2000px) {
     font-size: 4rem;
@@ -49,17 +53,21 @@
   @media screen and (max-width: 450px) {
     font-size: 1rem;
   }
-
-  span {
-    color: var(--black-color);
-  }
 }
 
 .b-head-text {
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
   color: var(--black-color);
+  font-family: var(--font-base);
 
   span {
     color: var(--white-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
   }
 
   @media screen and (max-width: 450px) {
@@ -67,36 +75,38 @@
   }
 }
 
-.p-text,
-.b-p-text {
+.p-text {
   font-size: 0.8rem;
+  text-align: left;
+  color: var(--white-color);
   line-height: 1.5;
   font-family: var(--font-secondary);
-
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
   }
+}
+
+.b-p-text {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--black-color);
+  font-family: var(--font-secondary);
+  line-height: 1.5;
 
   @media screen and (max-width: 450px) {
     font-size: 1rem;
   }
-}
 
-.p-text {
-  text-align: left;
-  color: var(--white-color);
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
 }
-
-.b-p-text {
-  text-align: center;
-  color: var(--black-color);
-}
-
-.bold-text,
-.b-bold-text {
+.bold-text {
   font-size: 1rem;
-  font-weight: 600;
+
+  color: var(--white-color);
   font-family: var(--font-base);
+  text-align: left;
 
   @media screen and (min-width: 2000px) {
     font-size: 2rem;
@@ -107,201 +117,120 @@
   }
 }
 
-.bold-text {
-  color: var(--white-color);
-  text-align: left;
-}
-
 .b-bold-text {
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--black-color);
+  font-family: var(--font-base);
   text-align: center;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
 }
 
-// Navigation and Social Styles
-.app__social,
+.app__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 0.25rem 0;
+    border: 1px solid var(--lightGray-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      color: var(--gray-color);
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 70px;
+      height: 70px;
+
+      margin: 0.5rem 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
 .app__navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   padding: 1rem;
 
-  @media screen and (max-width: 500px) {
+  .app__navigation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 0.5rem;
+
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app__navigation,
+  .app__social {
     display: none;
   }
 }
 
-.app__social div,
-.app__navigation .app__navigation-dot {
-  transition: all 0.3s ease-in-out;
-
-  @media screen and (min-width: 2000px) {
-    width: 70px;
-    height: 70px;
-    margin: 0.5rem 0;
-
-    svg {
-      width: 30px;
-      height: 30px;
-    }
+.weDo__section {
+  @media screen and (max-width: 500px) {
+    height: 100vh;
+    scroll-snap-type: none;
+    overflow-y: scroll;
   }
 }
 
-.app__social div {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--white-color);
-  margin: 0.25rem 0;
-  border: 1px solid var(--lightGray-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  svg {
-    width: 15px;
-    height: 15px;
-    color: var(--gray-color);
-  }
-
-  &:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-
-    svg {
-      color: var(--white-color);
-    }
-  }
-}
-
-.app__navigation .app__navigation-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--white-color);
-  margin: 0.5rem;
-  transition: background-color 0.2s ease-in-out;
-
-  &:hover {
-    background-color: var(--primary-color);
-  }
-
-  @media screen and (min-width: 2000px) {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-// Section Styles
-.weDo__section,
 .team__section {
   @media screen and (max-width: 500px) {
     height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: none;
+    overflow-y: scroll;
   }
-}
-
-// Additional Component Styles (for About section)
-.app__profiles {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 8rem;
-
-  .decoration__about {
-    color: var(--primary-color);
-    font-weight: 800;
-  }
-
-  @media screen and (max-width: 450px) {
-    margin-top: 0.5rem;
-  }
-}
-
-.app__profile-item {
-  width: 340px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 1rem;
-
-  @media screen and (max-width: 450px) {
-    margin-top: 2rem;
-  }
-
-  h2 {
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 1.6rem;
-
-    @media screen and (max-width: 450px) {
-      margin-top: 0px;
-      font-size: 0.9rem;
-    }
-  }
-
-  svg {
-    margin: 4px;
-    width: 25px;
-    height: 25px;
-    color: var(--primary-color);
-
-    @media screen and (max-width: 450px) {
-      margin-top: 1rem;
-    }
-
-    @media screen and (max-width: 350px) {
-      width: 15px;
-      height: 15px;
-    }
-  }
-
-  @media screen and (min-width: 2000px) {
-    width: 370px;
-    margin: 2rem 4rem;
-  }
-
-  @media screen and (max-width: 450px) {
-    margin-top: 4rem;
-  }
-
-  @media screen and (max-width: 350px) {
-    margin-top: 0.5rem;
-  }
-}
-
-.card__description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  top: auto;
-  left: 0;
-  width: 100%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  z-index: 1;
-
-  @media screen and (max-width: 450px) {
-    background-color: var(--secondary-color);
-  }
-
-  p {
-    font-size: 1.3rem;
-
-    @media screen and (max-width: 450px) {
-      font-size: 0.9rem;
-    }
-  }
-}
-
-button {
-  border: none;
-  background: none;
 }
