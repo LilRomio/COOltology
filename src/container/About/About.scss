@@ -36,6 +36,10 @@
     color: var(--primary-color);
     font-weight: 800;
   }
+
+  @media screen and (max-width: 1180px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 450px) {
     margin-top: 0.5rem;
   }
