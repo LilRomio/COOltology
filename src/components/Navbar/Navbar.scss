@@ -32,27 +32,18 @@
     position: fixed;
     width: 140px;
     mix-blend-mode: difference;
-    left: 1;
+    left: 0;
     z-index: 2;
-    padding-left: 10px;
-  }
+    padding-left: 15px;
 
-  @media screen and (max-width: 450px) {
-    margin-left: 10px;
-  }
+    svg {
+      .cls-1 {
+        fill: var(--primary-color);
+      }
 
-  img {
-    width: 140px;
-    height: 50px;
-    mix-blend-mode: difference;
-    @media screen and (min-width: 2000px) {
-      width: 220px;
-      height: 70px;
-    }
-    @media screen and (max-width: 450px) {
-      width: 80px;
-      height: 30px;
-      padding: 0;
+      .cls-2 {
+        fill: var(--white-color);
+      }
     }
   }
 }

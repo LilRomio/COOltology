@@ -6,10 +6,10 @@ import './Navbar.scss';
 
 const getMenuVariants = (isMobile) => ({
   open: {
-    width: isMobile ? '320px' : '480px',
+    width: isMobile ? '350px' : '480px',
     height: isMobile ? '100%' : '650px',
     top: isMobile ? '10px' : '-25px',
-    right: isMobile ? '0px' : '-25px',
+    right: isMobile ? '0px' : '-15px',
     transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
