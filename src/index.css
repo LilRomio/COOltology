@@ -22,6 +22,13 @@
 
 html {
   scroll-snap-type: y mandatory;
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+    scroll-snap-type: none;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 body {
