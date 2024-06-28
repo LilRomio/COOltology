@@ -81,9 +81,10 @@
         }
 
         .arrow {
-          width: 20px; /* Adjust size of arrow as needed */
-          height: 5px;
-          margin-right: 6px; /* Adjust margin as needed */
+          img {
+            height: 25px;
+            margin-right: 6px; /* Adjust margin as needed */
+          }
         }
       }
 
