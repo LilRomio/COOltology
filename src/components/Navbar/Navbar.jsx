@@ -21,7 +21,7 @@ const getMenuVariants = (isMobile) => ({
   },
 });
 
-const Navbar = () => {
+const Navbar = ({ applyFilter }) => {
   const [isActive, setIsActive] = useState(false);
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -49,8 +49,8 @@ const Navbar = () => {
             <defs>
               <style type="text/css">
                 {`
-                  .cls-1 { fill: #805ce5; }
-                  .cls-1, .cls-2 { stroke-width: 0px; }
+                 .cls-1 { fill: var(--primary-color); }
+                  
                   .cls-2 { fill: #ffffff; }
                 `}
               </style>
