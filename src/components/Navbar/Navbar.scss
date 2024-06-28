@@ -10,7 +10,7 @@
 
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  // border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   right: 1px;
   top: 10px;
@@ -32,8 +32,9 @@
     position: fixed;
     width: 140px;
     mix-blend-mode: difference;
-    left: 0;
+    left: 1;
     z-index: 2;
+    padding-left: 10px;
   }
 
   @media screen and (max-width: 450px) {
