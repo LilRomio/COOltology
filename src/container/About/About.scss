@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .app__about {
   flex: 1;
   width: 100%;
@@ -7,18 +9,18 @@
 .about__title {
   flex-direction: column;
   color: var(--white-color);
-  @media screen and (max-width: 1200px) {
+  @include tablet {
     margin-top: 50px;
   }
 
-  @media screen and (max-width: 450px) {
+  @include mobile {
     padding-top: 30px;
   }
 
   h1 {
     font-size: 3rem;
 
-    @media screen and (max-width: 450px) {
+    @include mobile {
       font-size: 2rem;
       margin-top: 30px;
     }
@@ -37,10 +39,8 @@
     font-weight: 800;
   }
 
-  @media screen and (max-width: 1180px) {
+  @include tablet {
     flex-direction: column;
-  }
-  @media screen and (max-width: 1000px) {
     margin-top: 0.5rem;
   }
 }
@@ -59,7 +59,7 @@
     font-weight: 600;
     font-size: 1.6rem;
 
-    @media screen and (max-width: 450px) {
+    @include mobile {
       margin-top: 0px;
       font-size: 1.4rem;
     }
@@ -70,7 +70,7 @@
     width: 25px;
     height: 25px;
     color: var(--primary-color);
-    @media screen and (max-width: 450px) {
+    @include mobile {
       margin-top: 1rem;
     }
 
@@ -79,11 +79,10 @@
       height: 15px;
     }
   }
-  @media screen and (min-width: 2000px) {
+  @include desktop {
     width: 370px;
-    margin: 2rem 4rem;
   }
-  @media screen and (max-width: 600px) {
+  @include mobile {
     margin-top: 1rem;
   }
   @media screen and (max-width: 350px) {

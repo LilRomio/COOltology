@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .app__weDo {
   flex: 1;
   width: 100%;
@@ -11,7 +13,7 @@
 
   padding: 20px;
 
-  @media screen and (max-width: 1200px) {
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +21,7 @@
     padding-top: 3rem;
   }
 
-  @media screen and (max-width: 350px) {
+  @include mobile {
     padding: 2rem 1rem;
   }
 }
@@ -42,7 +44,7 @@
   grid-template-columns: 1fr 1fr;
 
   row-gap: 2rem;
-  @media screen and (max-width: 1200px) {
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,11 +82,11 @@
     font-size: 1.8rem;
     margin-right: 3px;
 
-    @media screen and (max-width: 1200px) {
+    @include tablet {
       font-size: 1.2rem;
     }
   }
-  @media screen and (max-width: 450px) {
+  @include mobile {
     width: 360px;
     height: 380px;
     padding: 0;
@@ -94,7 +96,7 @@
     }
   }
 
-  @media screen and (min-width: 2000px) {
+  @include desktop {
     width: 370px;
     margin: 2rem 4rem;
   }
@@ -107,13 +109,13 @@
   text-align: left;
   row-gap: 15px;
 
-  @media screen and (max-width: 450px) {
+  @include mobile {
     row-gap: 5px;
   }
 
   .card__description-weDo p {
     font-size: 0.7rem;
-    @media screen and (max-width: 450px) {
+    @include mobile {
       font-size: 0.3rem;
     }
   }

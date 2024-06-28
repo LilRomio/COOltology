@@ -4,32 +4,36 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Nav from '../Nav';
 import './Navbar.scss';
 
-const getMenuVariants = (isMobile) => ({
-  open: {
-    width: isMobile ? '350px' : '480px',
-    height: isMobile ? '100%' : '650px',
-    top: isMobile ? '10px' : '-25px',
-    right: isMobile ? '0px' : '-15px',
-    transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
-  },
-  closed: {
-    width: isMobile ? '70px' : '100px',
-    height: isMobile ? '30px' : '40px',
-    top: '0px',
-    right: isMobile ? '-25px' : '0px',
-    transition: { duration: 0.75, delay: 0.35, type: 'tween', ease: [0.76, 0, 0.24, 1] },
-  },
-});
+const getMenuVariants = (screenSize) => {
+  const isMobile = screenSize <= 768;
+  const isTablet = screenSize > 768 && screenSize <= 1024;
+
+  return {
+    open: {
+      width: isMobile ? '350px' : isTablet ? '420px' : '480px',
+      height: isMobile ? '100%' : isTablet ? '550px' : '650px',
+      top: isMobile ? '10px' : isTablet ? '-15px' : '-25px',
+      right: isMobile ? '0px' : isTablet ? '-10px' : '-15px',
+      transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
+    },
+    closed: {
+      width: isMobile ? '70px' : isTablet ? '85px' : '100px',
+      height: isMobile ? '30px' : isTablet ? '35px' : '40px',
+      top: '0px',
+      right: isMobile ? '-25px' : isTablet ? '10px' : '0px',
+      transition: { duration: 0.75, delay: 0.35, type: 'tween', ease: [0.76, 0, 0.24, 1] },
+    },
+  };
+};
 
 const Navbar = ({ applyFilter }) => {
   const [isActive, setIsActive] = useState(false);
-
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
   const sectionRefs = useRef([]);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setScreenSize(window.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);
@@ -39,7 +43,7 @@ const Navbar = ({ applyFilter }) => {
     };
   }, []);
 
-  const menuVariants = getMenuVariants(isMobile);
+  const menuVariants = getMenuVariants(screenSize);
 
   return (
     <div className="navbar">

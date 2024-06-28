@@ -1,16 +1,18 @@
+@import '../../app.scss';
+
 .description {
   display: flex;
   justify-content: space-between;
   padding: 70px 30px;
   font-family: var(--font-base);
 
-  @media screen and (max-width: 450px) {
+  @include mobile {
     padding: 110px 20px;
     justify-content: center;
   }
 
   h2 {
-    @media screen and (max-width: 450px) {
+    @include mobile {
       padding-right: 10px;
       text-align: left;
     }
@@ -24,7 +26,7 @@
 
     p {
       margin: 0;
-      font-size: 4.2rem;
+      font-size: 4.3rem;
 
       span {
         margin-right: 5px;
@@ -35,14 +37,12 @@
         overflow: hidden;
         display: inline-flex;
       }
-      @media screen and (max-width: 950px) {
-        font-size: 3rem;
-      }
-      @media screen and (max-width: 600px) {
+
+      @include tablet {
         font-size: 2.4rem;
       }
 
-      @media screen and (max-width: 450px) {
+      @include mobile {
         font-size: 2.1rem;
       }
 
