@@ -220,7 +220,8 @@
 }
 
 .weDo__section {
-  @media screen and (max-width: 500px) {
+  height: 100%;
+  @media screen and (max-width: 600px) {
     height: 100vh;
     scroll-snap-type: none;
     overflow-y: scroll;
@@ -228,7 +229,8 @@
 }
 
 .team__section {
-  @media screen and (max-width: 500px) {
+  height: auto;
+  @media screen and (max-width: 600px) {
     height: 100vh;
     scroll-snap-type: none;
     overflow-y: scroll;
