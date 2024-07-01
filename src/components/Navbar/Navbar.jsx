@@ -3,6 +3,7 @@ import Button from '../Button';
 import { AnimatePresence, motion } from 'framer-motion';
 import Nav from '../Nav';
 import './Navbar.scss';
+import { images } from '../../constants';
 
 const getMenuVariants = (screenSize) => {
   const isMobile = screenSize <= 768;
@@ -48,6 +49,20 @@ const Navbar = ({ applyFilter }) => {
   return (
     <div className="navbar">
       <div className="logo">
+        <span className="decoration__weDo-text">
+          <img
+            src={images.Symbol}
+            alt="Symbol"
+            style={{
+              width: '25px',
+              height: '25px',
+              position: 'fixed',
+              marginTop: '2.01rem',
+              marginLeft: '2.4rem',
+              zIndex: '5',
+            }}
+          />
+        </span>
         <div class="fixed_menu">
           <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 731.66 240">
             <defs>
