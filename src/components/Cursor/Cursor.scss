@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 999;
 
-  @include tablet {
+  @media screen and (max-width: 450px) {
     display: none;
   }
 }
