@@ -26,21 +26,18 @@ const Team = () => {
                 <div>, I’m Sandra!</div>
               </h2>
 
-              <h2 className="b-head-text " style={{ fontSize: '1.6rem' }}>
-                Main Cooltogist & Founder
-              </h2>
-              <br />
-              <br />
+              <h2 className="b-head-text team-subtitle ">Main Cooltogist & Founder</h2>
+
               <p className="b-p-text">Political Science breeding.</p>
-              <br />
+
               <p className="b-p-text">Experienced in the triad of agency, corporate and business worlds.</p>
-              <br />
+
               <p className="b-p-text">Perfect blend of creativity & action.</p>
-              <br />
+
               <p className="b-p-text">
                 Insatiable appetite for culture and its intricate dance with people and societies.
               </p>
-              <br />
+
               <p className="b-p-text">
                 Strong believer in a brand’s alignment with cultural context & market dynamics.
               </p>
