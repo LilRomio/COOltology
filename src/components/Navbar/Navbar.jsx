@@ -17,8 +17,8 @@ const getMenuVariants = (screenSize) => {
       transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
     },
     closed: {
-      width: isMobile ? '70px' : isTablet ? '85px' : '100px',
-      height: isMobile ? '30px' : isTablet ? '35px' : '40px',
+      width: isMobile ? '0px' : isTablet ? '0px' : '0px',
+      height: isMobile ? '0px' : isTablet ? '0px' : '0px',
       top: '0px',
       right: isMobile ? '-25px' : isTablet ? '10px' : '0px',
       transition: { duration: 0.75, delay: 0.35, type: 'tween', ease: [0.76, 0, 0.24, 1] },
