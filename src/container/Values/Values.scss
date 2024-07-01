@@ -6,6 +6,10 @@
   padding: 70px 30px;
   font-family: var(--font-base);
 
+  .values__title {
+    min-width: 100px;
+  }
+
   @include mobile {
     padding: 110px 20px;
     justify-content: center;
