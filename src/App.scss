@@ -227,30 +227,3 @@
     overflow-y: scroll;
   }
 }
-
-.team__section {
-  height: auto;
-  @media screen and (max-width: 600px) {
-    height: 100vh;
-    scroll-snap-type: none;
-    overflow-y: scroll;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: 738px) {
-    @content;
-  }
-}
-@mixin tablet {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
-@mixin desktop {
-  @media (max-width: 1366px) {
-    @content;
-  }
-}
