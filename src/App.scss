@@ -94,7 +94,7 @@
   line-height: 1.5;
 
   @media screen and (max-width: 450px) {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   @media screen and (min-width: 2000px) {
@@ -216,14 +216,5 @@
   .app__navigation,
   .app__social {
     display: none;
-  }
-}
-
-.weDo__section {
-  height: 100%;
-  @media screen and (max-width: 600px) {
-    height: 100vh;
-    scroll-snap-type: none;
-    overflow-y: scroll;
   }
 }

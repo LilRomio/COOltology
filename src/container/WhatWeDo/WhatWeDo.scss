@@ -19,6 +19,11 @@
     padding-top: 3rem;
   }
 
+  @media screen and (max-width: 450px) {
+    align-items: flex-start;
+    row-gap: 5px;
+  }
+
   @media screen and (max-width: 350px) {
     padding: 2rem 1rem;
   }
@@ -52,6 +57,9 @@
       scale: 1;
     }
   }
+  @media screen and (max-width: 450px) {
+    row-gap: 5px;
+  }
 }
 
 .weDo-card {
@@ -68,10 +76,16 @@
 
   .b-bold-text {
     font-size: 1.8rem;
+    @media screen and (max-width: 450px) {
+      font-size: 1.2rem;
+    }
   }
 
   .card__subtitle p {
     font-size: 1.2rem;
+    @media screen and (max-width: 450px) {
+      font-size: 0.8rem;
+    }
   }
 
   .decoration__weDo {
@@ -86,12 +100,8 @@
   }
   @media screen and (max-width: 450px) {
     width: 360px;
-    height: 380px;
+    height: auto;
     padding: 0;
-
-    &:nth-child(1) {
-      height: 250px;
-    }
   }
 
   @media screen and (min-width: 2000px) {
@@ -108,7 +118,7 @@
   row-gap: 15px;
 
   @media screen and (max-width: 450px) {
-    row-gap: 5px;
+    row-gap: 3px;
   }
 
   .card__description-weDo p {
