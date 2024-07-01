@@ -29,6 +29,10 @@
       width: 20%;
       margin-bottom: 0;
     }
+
+    @media screen and (max-width: 450px) {
+      margin-bottom: 5px;
+    }
   }
 
   .why__content {

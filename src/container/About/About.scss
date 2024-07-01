@@ -104,9 +104,6 @@
   padding: 1rem; // Optional: Add some padding
   z-index: 1; // Ensure it appears above
 
-  @media screen and (max-width: 450px) {
-    background-color: var(--secondary-color);
-  }
   p {
     font-size: 1.3rem;
 

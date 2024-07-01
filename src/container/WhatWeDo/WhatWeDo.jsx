@@ -1,6 +1,7 @@
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
 import './WhatWeDo.scss';
+import { CgMoreO } from 'react-icons/cg';
+import { FaGenderless } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 
 const items = [
@@ -10,7 +11,7 @@ const items = [
     subtitle: 'Vision-driven Roadmap ',
     description1: 'Brand Audit',
     description2: 'Brand Insights',
-    description3: ' Actionable Roadmap to prioritize initiatives and optimize return',
+    description3: 'Actionable Roadmap to prioritize initiatives and optimize return',
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const items = [
     description1: 'Maintenance & Supervision of Brand Strategy ',
     description2: 'Creation of processes for brand implementation, both internally and externally',
     description3:
-      ' Optimize every touchpoint where your brand will be seen and experienced, both internally and externally.',
+      'Optimize every touchpoint where your brand will be seen and experienced, both internally and externally.',
   },
   {
     id: 3,
@@ -42,33 +43,51 @@ const items = [
 ];
 
 const WhatWeDo = () => {
+  const [visibleDescription, setVisibleDescription] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 780);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 780);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleDescription = (index) => {
+    setVisibleDescription(visibleDescription === index ? null : index);
+  };
+
   return (
-    <>
-      <div className="container">
-        <div className="weDo-info">
-          <h1 className="b-p-text weDo-title">We Do</h1>
-        </div>
+    <div className="container">
+      <div className="weDo-info">
+        <h1 className="b-p-text weDo-title">We Do</h1>
+      </div>
 
-        <div className="weDo-grid">
-          {items.map((about, index) => (
-            <motion.div
-              // whileInView={{ opacity: 1, y: [300, 0] }}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              className="weDo-card"
-              key={about.title + index}
-            >
-              <span className="decoration__weDo"> // </span>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <motion.div className="b-bold-text " style={{ fontWeight: 400, textAlign: 'left' }}>
-                  {about.title}
-                </motion.div>
+      <div className="weDo-grid">
+        {items.map((about, index) => (
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+            className="weDo-card"
+            key={about.title + index}
+          >
+            <span className="decoration__weDo"> // </span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+              <motion.div className="b-bold-text " style={{ fontWeight: 400, textAlign: 'left' }}>
+                {about.title}
+              </motion.div>
 
-                <div className="card__subtitle">
-                  <p className="b-p-text " style={{ textTransform: 'uppercase', textAlign: 'left' }}>
-                    {about.subtitle}
-                  </p>
-                </div>
+              <div className="card__subtitle">
+                <p className="b-p-text " style={{ textTransform: 'uppercase', textAlign: 'left' }}>
+                  {about.subtitle}
+                </p>
+              </div>
+
+              {!isMobile && (
                 <div className="card__description-weDo">
                   <p className="b-p-text " style={{ textAlign: 'left' }}>
                     {about.description1}
@@ -80,12 +99,32 @@ const WhatWeDo = () => {
                     {about.description3}
                   </p>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+              )}
+
+              {isMobile && visibleDescription === index && (
+                <div className="card__description-weDo">
+                  <p className="b-p-text " style={{ textAlign: 'left' }}>
+                    {about.description1}
+                  </p>
+                  <p className="b-p-text " style={{ textAlign: 'left' }}>
+                    {about.description2}
+                  </p>
+                  <p className="b-p-text " style={{ textAlign: 'left' }}>
+                    {about.description3}
+                  </p>
+                </div>
+              )}
+
+              {isMobile && (
+                <button className="toggle-button" onClick={() => toggleDescription(index)}>
+                  {visibleDescription === index ? <FaGenderless /> : <CgMoreO />}
+                </button>
+              )}
+            </div>
+          </motion.div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

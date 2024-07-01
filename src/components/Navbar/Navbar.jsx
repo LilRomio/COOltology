@@ -10,7 +10,7 @@ const getMenuVariants = (screenSize) => {
 
   return {
     open: {
-      width: isMobile ? '350px' : isTablet ? '420px' : '480px',
+      width: isMobile ? '100%' : isTablet ? '420px' : '480px',
       height: isMobile ? '100%' : isTablet ? '550px' : '650px',
       top: isMobile ? '10px' : isTablet ? '-15px' : '-25px',
       right: isMobile ? '0px' : isTablet ? '-10px' : '-15px',
