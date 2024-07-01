@@ -1,5 +1,3 @@
-@import '../../app.scss';
-
 .nav {
   display: flex;
   flex-direction: column;
@@ -27,13 +25,13 @@
         color: var(--primary-color);
         font-weight: 600;
       }
-      @include mobile {
+      @media screen and (max-width: 650px) {
         font-size: 32px;
       }
     }
   }
 
-  @include mobile {
+  @media screen and (max-width: 650px) {
     padding: 50px 40px 50px 40px;
   }
   // .footer {
