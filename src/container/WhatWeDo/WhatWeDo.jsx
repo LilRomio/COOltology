@@ -75,10 +75,9 @@ const WhatWeDo = () => {
             className="weDo-card"
             key={about.title + index}
           >
-            <span className="decoration__weDo"> // </span>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <motion.div className="b-bold-text " style={{ textAlign: 'left' }}>
-                {about.title}
+                <span className="decoration__weDo"> // </span> {about.title}
               </motion.div>
 
               <div className="card__subtitle">
