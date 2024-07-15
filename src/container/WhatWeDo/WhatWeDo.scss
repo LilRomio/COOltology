@@ -3,6 +3,12 @@
   width: 100%;
 }
 
+.weDo-info {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 9fr;
@@ -77,15 +83,16 @@
   .b-bold-text {
     font-size: 1.8rem;
     @media screen and (max-width: 450px) {
-      font-size: 1.5rem;
-      font-weight: 700;
+      font-size: 1.2rem;
     }
   }
 
   .card__subtitle p {
     font-size: 1.2rem;
+    margin-bottom: 20px;
     @media screen and (max-width: 450px) {
       font-size: 0.9rem;
+      margin-bottom: 8px;
     }
   }
 
@@ -96,7 +103,7 @@
     margin-right: 3px;
 
     @media screen and (max-width: 1200px) {
-      font-size: 1.4rem;
+      font-size: 1rem;
       font-weight: 800;
       margin-right: 0;
     }

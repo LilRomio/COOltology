@@ -58,7 +58,7 @@ const Navbar = ({ applyFilter }) => {
               height: '25px',
               position: 'fixed',
               marginTop: '2.01rem',
-              marginLeft: '2.4rem',
+              marginLeft: '2.1rem',
               zIndex: '5',
             }}
           />

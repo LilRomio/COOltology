@@ -13,6 +13,16 @@
     .title {
       padding: 1rem;
 
+      .title__footer {
+        font-size: 3.5rem;
+        font-weight: 600;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @media screen and (max-width: 450px) {
+          justify-content: center;
+        }
+      }
       .symbol {
         width: 80px; /* Adjust size of symbol as needed */
         height: 80px;
@@ -77,6 +87,7 @@
         .symbol {
           width: 60px; /* Adjust size of symbol as needed */
           height: 60px;
+          margin-left: 84px;
           /* Adjust margin as needed */
         }
 

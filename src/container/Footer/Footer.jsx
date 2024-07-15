@@ -17,10 +17,7 @@ const Footer = () => {
           >
             <img src={images.Symbol} alt="Symbol" />
           </motion.div>
-          <div
-            className="head-text app__flex"
-            style={{ alignItems: 'flex-start', justifyContent: 'flex-start', fontSize: '3.5rem' }}
-          >
+          <div className="title__footer app__flex">
             Let’s talk
             <motion.span
               whileInView={{ opacity: 1, x: [100, 0] }}
