@@ -31,6 +31,10 @@
       margin: 0;
       font-size: 4.2rem;
 
+      :first-child {
+        margin-right: 0;
+      }
+
       span {
         margin-right: 7px;
       }
@@ -39,6 +43,9 @@
         position: relative;
         overflow: hidden;
         display: inline-flex;
+        :first-child {
+          margin-right: 0;
+        }
       }
       @media screen and (max-width: 950px) {
         font-size: 3rem;
